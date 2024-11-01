@@ -32,7 +32,9 @@ function App() {
         {/* Vychozi stranka cele aplikace */}
         <Route path="/" element={<Layout />}> 
           <Route index element={<Home />} />
-          <Route path="Explore" element={<ExploreRecipes />} />
+          <Route path="Explore" element={<ExploreRecipes />}>
+            <Route path=":recipeId" element={<RecipeDetail/>}/>
+            </Route>
         </Route>
       </Routes>
       </BrowserRouter>
