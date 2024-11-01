@@ -11,7 +11,7 @@ export function Navbar() {
 
   return (
     <>
-      <header className="w-full bg-[#fcfcfc] border-b border-gray-200">
+      <header className="w-full fixed bg-[#fcfcfc] border-b border-gray-200">
         <div className="max-w-[1280px] mx-auto flex items-center justify-between p-5">
           <div className="noto-serif-kr">
             <span className="font-bold">Fork</span>It

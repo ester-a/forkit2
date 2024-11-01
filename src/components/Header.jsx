@@ -3,7 +3,7 @@ import headerImage from "../assets/header_img.jpg";
 export function Header() {
   return (
     <>
-    <header className="w-full bg-[#f9f9f9]">
+    <header className="w-full pt-20 bg-[#f9f9f9]">
       <div className="max-w-[1280px] mx-auto flex items-center justify-between p-5">
         <div className="w-full grid gap-3 md:gap-6 md:grid-cols-2">
           <div>
@@ -25,7 +25,6 @@ export function Header() {
                 covered. Our curated collection of wholesome recipes is designed
                 to inspire your culinary journey, making healthy eating
                 enjoyable and accessible. <br/>
-                {/* <span className="font-semibold text-lg">Happy cooking!</span> */}
               </p>
               <span className="font-semibold text-lg">Happy cooking!</span>
             </div>

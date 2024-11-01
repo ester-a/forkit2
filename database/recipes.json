@@ -39,7 +39,7 @@
               "Poach the eggs by boiling water and gently lowering eggs into the water for 3-4 minutes.",
               "Spread avocado on toast, top with poached eggs, and sprinkle with red pepper flakes."
             ],
-            "image": "./src/images/recipes/breakfast/avo-with-poached-egg.webp"
+            "image": "./public/images/recipes /breakfast/avo-with-poached-egg.webp"
           },
           {
             "id": "greek-yogurt-parfait",
@@ -78,7 +78,7 @@
               "Drizzle honey over the top and sprinkle chia seeds.",
               "Serve immediately."
             ],
-            "image": "./src/images/recipes/breakfast/Yogurt-Parfaits.jpg"
+            "image": "./public/images/recipes /breakfast/Yogurt-Parfaits.jpg"
           },
           {
             "id": "grilled-chicken-salad",
@@ -121,7 +121,7 @@
               "In a small bowl, whisk together olive oil, balsamic vinegar, salt, and pepper.",
               "Toss the salad with the dressing and top with sliced grilled chicken."
             ],
-            "image": "./src/images/recipes/lunch/grilled-chicken-salad.jpg"
+            "image": "./public/images/recipes /lunch/grilled-chicken-salad.jpg"
           },
           {
             "id": "quinoa-and-black-bean-bowl",
@@ -164,7 +164,7 @@
               "Drizzle with olive oil and lime juice, then toss to combine.",
               "Season with salt and pepper."
             ],
-            "image": "./src/images/recipes/lunch/quinoa-and-black-beans.jpg" 
+            "image": "./public/images/recipes /lunch/quinoa-and-black-beans.jpg" 
           },
           {
             "id": "grilled-salmon-with-asparagus",
@@ -206,7 +206,7 @@
               "Grill asparagus for 4-5 minutes, turning occasionally.",
               "Drizzle salmon and asparagus with lemon juice before serving."
             ],
-            "image": "./src/images/recipes/dinner/Salmon_Asparagus.webp"
+            "image": "./public/images/recipes /dinner/Salmon_Asparagus.webp"
           },
           {
             "id": "vegetable-stir-fry-with-tofu",
@@ -250,7 +250,7 @@
               "Stir-fry for 5-7 minutes, then add tofu back in.",
               "Drizzle with soy sauce and toss to coat before serving."
             ],
-            "image": "./src/images/recipes/dinner/Tofu-Stir-Fry.jpg"
+            "image": "./public/images/recipes /dinner/Tofu-Stir-Fry.jpg"
           },
           {
             "id": "apple-slices-with-almond-butter",
@@ -285,7 +285,7 @@
               "Slice the apple into wedges.",
               "Serve with almond butter for dipping."
             ],
-            "image": "./src/images/recipes/snack/Almond-Butter-Apples.jpg"
+            "image": "./public/images/recipes /snacks/Almond-Butter-Apples.jpg"
           },
           {
             "id": "trail-mix-energy-bites",
@@ -323,7 +323,7 @@
               "Mix all ingredients together in a large bowl until well combined.",
               "Roll into bite-sized balls and refrigerate for 10 minutes before serving."
             ],
-            "image": "./src/images/recipes/snack/Trail-Mix-Energy-Bites.webp"
+            "image": "./public/images/recipes /snacks/Trail-Mix-Energy-Bites.webp"
           },
 {
     "id": "kale-and-quinoa-salad",
@@ -364,7 +364,7 @@
       "In a large bowl, mix quinoa, massaged kale, almonds, and cranberries.",
       "Season with salt and pepper before serving."
     ],
-    "image": "./src/images/recipes/salad/quinoa-salad.jpg"
+    "image": "./public/images/recipes /salads/quinoa-salad.jpg"
   },
   {
     "id": "baked-chicken-with-sweet-potato",
@@ -405,7 +405,7 @@
       "Peel and cube sweet potatoes, tossing them in olive oil, salt, and pepper.",
       "Bake chicken and sweet potatoes for 30-35 minutes or until fully cooked."
     ],
-    "image": "./src/images/recipes/dinner/chicken-sweet-potatoes.jpg"
+    "image": "./public/images/recipes /dinner/chicken-sweet-potatoes.jpg"
   },
   {
     "id": "chickpea-salad-wrap",
@@ -445,7 +445,7 @@
       "Mix in celery, cucumber, vegan mayo, salt, and pepper.",
       "Spoon the chickpea mixture onto the lettuce leaves and wrap."
     ],
-    "image": "./src/images/recipes/lunch/chickpea-wrap.webp"
+    "image": "./public/images/recipes /lunch/chickpea-wrap.webp"
   },
   {
     "id": "vegan-buddha-bowl",
@@ -486,7 +486,7 @@
       "Drizzle with tahini and lemon juice.",
       "Season with salt and pepper."
     ],
-    "image": "./src/images/recipes/lunch/budha-bowl.jpg"
+    "image": "./public/images/recipes /lunch/budha-bowl.jpg"
   },
   {
     "id": "lentil-and-veggie-stir-fry",
@@ -527,7 +527,7 @@
       "Add bell pepper, spinach, and carrots, and stir-fry for 5 minutes.",
       "Stir in lentils and soy sauce, and cook until warm."
     ],
-    "image": "./src/images/recipes/dinner/vegan-lentil-stir-fry.webp"
+    "image": "./public/images/recipes /dinner/vegan-lentil-stir-fry.webp"
   },
   {
     "id": "green-smoothie-bowl",
@@ -565,7 +565,7 @@
       "Blend spinach, banana, avocado, and almond milk until smooth.",
       "Pour into a bowl and top with chia seeds."
     ],
-    "image": "./src/images/recipes/breakfast/green-smoothie-bowl.jpg"
+    "image": "./public/images/recipes /breakfast/green-smoothie-bowl.jpg"
   },
   {
     "id": "grilled-chicken-with-roasted-vegetables",
@@ -604,7 +604,7 @@
       "Roast broccoli and bell pepper with olive oil, salt, and pepper at 400°F for 15 minutes.",
       "Serve chicken with roasted vegetables."
     ],
-    "image": "./src/images/recipes/dinner/grilled-chicken-roasted-veg.jpg"
+    "image": "./public/images/recipes /dinner/grilled-chicken-roasted-veg.jpg"
   },
   {
     "id": "turkey-meatballs-with-zucchini-noodles",
@@ -643,7 +643,7 @@
       "Bake meatballs at 375°F for 20 minutes.",
       "Saute zucchini noodles in a pan for 2-3 minutes and serve with meatballs."
     ],
-    "image": "./src/images/recipes/dinner/turkey-meatballs-with-zucchini.jpg"
+    "image": "./public/images/recipes /dinner/turkey-meatballs-with-zucchini.jpg"
   },
   {
     "id": "quinoa-stuffed-bell-peppers",
@@ -689,7 +689,7 @@
       "Bake for 25 minutes, then remove foil and bake for an additional 5 minutes.",
       "Garnish with parsley before serving."
     ],
-    "image": "./src/images/recipes/dinner/stuffed-peppers.jpg"
+    "image": "./public/images/recipes /dinner/stuffed-peppers.jpg"
   },
 
   {
@@ -729,7 +729,7 @@
       "Saute bell pepper and onion until soft.",
       "Add tofu and turmeric, and cook for 5 minutes."
     ],
-    "image": "./src/images/recipes/breakfast/Tofu-Scramble.webp"
+    "image": "./public/images/recipes /breakfast/Tofu-Scramble.webp"
   },
   {
     "id": "lentil-and-spinach-soup",
@@ -775,7 +775,7 @@
       "Stir in spinach and cook until wilted, about 2 minutes.",
       "Season with salt and pepper before serving."
     ],
-    "image": "./src/images/recipes/lunch/lentil-spinach-soup.webp"
+    "image": "./public/images/recipes /lunch/lentil-spinach-soup.webp"
   },
   {
     "id": "avocado-and-egg-salad",
@@ -815,7 +815,7 @@
       "Drizzle with lemon juice, and season with salt and pepper.",
       "Gently mix ingredients together, then top with chives before serving."
     ],
-    "image": "./src/images/recipes/salads/avocado-egg-salad.jpg"
+    "image": "./public/images/recipes /salads/avocado-egg-salad.jpg"
   },
   {
     "id": "blueberry-chia-pudding",
@@ -855,7 +855,7 @@
       "again to get out any clumps that may have formed. Place mixture in the fridge to set, at least 30 minutes but up to 12 hours.",
       "When ready to enjoy, top with fresh blueberries and granola."
     ],
-    "image": "./src/images/recipes/breakfast/blueberry-chia-pudding.webp"
+    "image": "./public/images/recipes /breakfast/blueberry-chia-pudding.webp"
   },
 
   {
@@ -910,7 +910,7 @@
       "mango, jalapeno, green onions, avocado, radishes and seaweed salad. Drizzle",
       "on sriracha mayo and sprinkle with black sesame seeds. Serve immediately."
     ],
-    "image": "./src/images/recipes/lunch/poke-bowl.jpg"
+    "image": "./public/images/recipes /lunch/poke-bowl.jpg"
   },
   {
     "id": "shakshuka",
@@ -966,7 +966,7 @@
       "Garnish with extra feta cheese and fresh cilantro and parsley. Serve with toast,",
       "veggies or over a whole grain like quinoa or brown rice for a complete meal."
     ],
-    "image": "./src/images/recipes/dinner/shakshuka.jpg"
+    "image": "./public/images/recipes /dinner/shakshuka.jpg"
   },
   {
     "id": "vegan-lentil-tacos",
@@ -1009,7 +1009,7 @@
       "Add cooked lentils and taco seasoning, stir to combine.",
       "Spoon lentil mixture into corn tortillas and top with shredded lettuce and tomatoes."
     ],
-    "image": "./src/images/recipes/dinner/vegan-lentil-tacos.webp"
+    "image": "./public/images/recipes /dinner/vegan-lentil-tacos.webp"
   },
 
   {
@@ -1053,7 +1053,7 @@
       "Add sweet potato, bell pepper, onion, salt, pepper, paprika, and garlic powder.",
       "Cover and cook for 15 minutes, stirring occasionally, until sweet potato is tender."
     ],
-    "image": "./src/images/recipes/dinner/turkey-sweet-potato.webp"
+    "image": "./public/images/recipes /dinner/turkey-sweet-potato.webp"
   },
   
   {
@@ -1091,7 +1091,7 @@
       "Spread almond butter onto one side of each banana slice and sprinkle with chia seeds.",
       "Place another banana slice on top to make a sandwich."
     ],
-    "image": "./src/images/recipes/dinner/turkey-sweet-potato.webp"
+    "image": "./public/images/recipes /dinner/turkey-sweet-potato.webp"
   },
   {
     "id": "chicken-and-avocado-salad",
@@ -1132,7 +1132,7 @@
       "Drizzle with olive oil and lemon juice. Add salt and pepper to taste.",
       "Toss gently and serve."
     ],
-    "image": "./src/images/recipes/lunch/avo-chicken-salad.webp"
+    "image": "./public/images/recipes /lunch/avo-chicken-salad.webp"
   },
   {
     "id": "protein-packed-hummus-snack",
@@ -1168,7 +1168,7 @@
     "instructions": [
       "Arrange sliced cucumber, baby carrots, and cherry tomatoes on a plate with hummus for dipping."
     ],
-    "image": "./src/images/recipes/snacks/hummus.jpg"
+    "image": "./public/images/recipes /snacks/hummus.jpg"
   },
 
   {
@@ -1209,7 +1209,7 @@
       "Pour the mixture into muffin tin, filling each cup halfway.",
       "Bake for 15 minutes or until eggs are set."
     ],
-    "image": "./src/images/recipes/breakfast/breakfast-egg-muffins.webp"
+    "image": "./public/images/recipes /breakfast/breakfast-egg-muffins.webp"
   },
   {
     "id": "lentil-and-sweet-potato-stew",
@@ -1258,7 +1258,7 @@
       "Bring to a boil, then reduce heat to low and let simmer for 30-35 minutes, until lentils and sweet potatoes are tender.",
       "Season with salt and pepper to taste and garnish with chopped parsley before serving."
     ],
-    "image": "./src/images/recipes/dinner/lentil-sweet-potato-stew.webp"
+    "image": "./public/images/recipes /dinner/lentil-sweet-potato-stew.webp"
   },
   {
     "id": "chickpea-and-spinach-curry",
@@ -1303,7 +1303,7 @@
       "Add chickpeas and coconut milk, stirring to combine.",
       "Simmer for 10 minutes, then add spinach and cook until wilted. Season to taste."
     ],
-    "image": "./src/images/recipes/dinner/chickpea-spinach-curry.jpg"
+    "image": "./public/images/recipes /dinner/chickpea-spinach-curry.jpg"
   },
   {
     "id": "overnight-oats-with-berries",
@@ -1344,7 +1344,7 @@
       "Divide the mixture into two jars and top with mixed berries.",
       "Cover and refrigerate overnight."
     ],
-    "image": "./src/images/recipes/breakfast/overnight-oats.jpg"
+    "image": "./public/images/recipes /breakfast/overnight-oats.jpg"
   },
   {
     "id": "zucchini-noodles-with-pesto",
@@ -1384,7 +1384,7 @@
       "Stir in pesto and cherry tomatoes, cooking for another 2 minutes.",
       "Season with salt and pepper, then serve."
     ],
-    "image": "./src/images/recipes/dinner/zucchini-noodles-with-pesto.webp"
+    "image": "./public/images/recipes /dinner/zucchini-noodles-with-pesto.webp"
   },
   {
     "id": "sweet-potato-and-black-bean-tacos",
@@ -1425,7 +1425,7 @@
       "Heat tortillas in a pan until warm.",
       "Assemble tacos with roasted sweet potatoes, black beans, and avocado."
     ],
-    "image": "./src/images/recipes/lunch/sweet-potato-bean-taco.avif"
+    "image": "./public/images/recipes /lunch/sweet-potato-bean-taco.avif"
   },
   {
     "id": "lentil-soup",
@@ -1466,7 +1466,7 @@
       "Add lentils, vegetable broth, cumin, salt, and pepper.",
       "Bring to a boil, then simmer for 30 minutes until lentils are tender."
     ],
-    "image": "./src/images/recipes/dinner/lentil-soup.jpg"
+    "image": "./public/images/recipes /dinner/lentil-soup.jpg"
   },
   {
     "id": "avocado-and-tomato-salad",
@@ -1506,7 +1506,7 @@
       "Drizzle with olive oil and lemon juice, then season with salt and pepper.",
       "Toss gently and serve."
     ],
-    "image": "./src/images/recipes/salads/avocado-tomato-salad.jpg"
+    "image": "./public/images/recipes /salads/avocado-tomato-salad.jpg"
   },
   {
     "id": "spinach-and-feta-omelette",
@@ -1547,7 +1547,7 @@
       "Pour in the eggs and cook until the edges start to set.",
       "Sprinkle feta cheese on one half and fold the omelette over. Cook for another minute."
     ],
-    "image": "./src/images/recipes/breakfast/spinach-and-feta-omelet.jpg"
+    "image": "./public/images/recipes /breakfast/spinach-and-feta-omelet.jpg"
   },
   {
     "id": "turkey-and-spinach-wrap",
@@ -1587,7 +1587,7 @@
       "Layer turkey, spinach, avocado, and tomato on top.",
       "Roll the tortilla tightly and slice in half to serve."
     ],
-    "image": "./src/images/recipes/lunch/turkey-spinach-wrap.webp"
+    "image": "./public/images/recipes /lunch/turkey-spinach-wrap.webp"
   },
   {
     "id": "roasted-vegetable-quinoa-bowl",
@@ -1629,7 +1629,7 @@
       "Spread vegetables on a baking sheet and roast for 25 minutes.",
       "Serve roasted veggies over quinoa."
     ],
-    "image": "./src/images/recipes/dinner/roasted-vegetable-quinoa-bowl.jpg"
+    "image": "./public/images/recipes /dinner/roasted-vegetable-quinoa-bowl.jpg"
   },
   {
     "id": "chia-seed-pudding",
@@ -1669,7 +1669,7 @@
       "Cover and refrigerate for at least 2 hours or overnight.",
       "Serve topped with fresh fruit."
     ],
-    "image": "./src/images/recipes/snacks/chia-pudding.jpg"
+    "image": "./public/images/recipes /snacks/chia-pudding.jpg"
   },
 
   {
@@ -1711,7 +1711,7 @@
       "Cover and refrigerate overnight.",
       "In the morning, stir and enjoy."
     ],
-    "image": "./src/images/recipes/breakfast/overnight-oats-almonds.jpg"
+    "image": "./public/images/recipes /breakfast/overnight-oats-almonds.jpg"
   },
   {
     "id": "chickpea-salad-sandwich",
@@ -1752,7 +1752,7 @@
       "Mix in vegan mayo, celery, red onion, lemon juice, salt, and pepper.",
       "Spread the chickpea mixture on whole grain bread and serve."
     ],
-    "image": "./src/images/recipes/lunch/chickpea-sandwich.jpg"
+    "image": "./public/images/recipes /lunch/chickpea-sandwich.jpg"
   },
   {
     "id": "stuffed-bell-peppers",
@@ -1794,7 +1794,7 @@
       "Stuff the mixture into halved bell peppers.",
       "Place peppers in a baking dish and cover with foil. Bake for 30 minutes."
     ],
-    "image": "./src/images/recipes/dinner/stuffed-peppers-rice.jpg"
+    "image": "./public/images/recipes /dinner/stuffed-peppers-rice.jpg"
   },
   {
     "id": "cauliflower-rice-stir-fry",
@@ -1835,7 +1835,7 @@
       "Stir in cauliflower rice and soy sauce, cooking for another 5-7 minutes.",
       "Garnish with green onions and serve."
     ],
-    "image": "./src/images/recipes/dinner/cauliflower-fried-rice.jpg"
+    "image": "./public/images/recipes /dinner/cauliflower-fried-rice.jpg"
   },
 
   {
@@ -1875,7 +1875,7 @@
       "Drizzle with balsamic vinaigrette and toss gently.",
       "Season with salt and pepper, then serve."
     ],
-    "image": "./src/images/recipes/salads/peach-walnut-salad.jpg"
+    "image": "./public/images/recipes /salads/peach-walnut-salad.jpg"
   },
   {
     "id": "almond-butter-banana-toast",
@@ -1914,7 +1914,7 @@
       "Spread almond butter evenly on each slice.",
       "Top with banana slices, drizzle with honey, and sprinkle with cinnamon."
     ],
-    "image": "./src/images/recipes/snacks/peanut-butter-banana-toast.webp"
+    "image": "./public/images/recipes /snacks/peanut-butter-banana-toast.webp"
   },
   {
     "id": "greek-yogurt-with-honey-and-nuts",
@@ -1952,7 +1952,7 @@
       "Drizzle with honey and top with mixed nuts and cinnamon.",
       "Serve immediately."
     ],
-    "image": "./src/images/recipes/snacks/Greek_Yogurt_With_Honey.jpg"
+    "image": "./public/images/recipes /snacks/Greek_Yogurt_With_Honey.jpg"
   },
   {
     "id": "savory-oatmeal-with-spinach-and-egg",
@@ -1993,7 +1993,7 @@
       "Fry eggs to your preference.",
       "Serve oatmeal topped with spinach and a fried egg."
     ],
-    "image": "./src/images/recipes/breakfast/savory-oatmeal-with-spinach.webp"
+    "image": "./public/images/recipes /breakfast/savory-oatmeal-with-spinach.webp"
   },
   {
     "id": "sweet-potato-and-chickpea-salad",
@@ -2035,7 +2035,7 @@
       "In a large bowl, combine roasted sweet potato, chickpeas, and mixed greens.",
       "Drizzle with balsamic vinegar before serving."
     ],
-    "image": "./src/images/recipes/salads/sweet-potato-salad.jpg"
+    "image": "./public/images/recipes /salads/sweet-potato-salad.jpg"
   },
   {
     "id": "egg-and-avocado-breakfast-wrap",
@@ -2076,7 +2076,7 @@
       "Spread mashed avocado on each tortilla, add scrambled eggs, and top with salsa.",
       "Wrap tightly and serve."
     ],
-    "image": "./src/images/recipes/breakfast/egg-avo-wrap.jpeg"
+    "image": "./public/images/recipes /breakfast/egg-avo-wrap.jpeg"
   }
   
 ]}
