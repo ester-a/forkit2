@@ -5,100 +5,88 @@ import { Link } from "react-router-dom";
 // import "slick-carousel/slick/slick-theme.css";
 // import Slider from "react-slick"; // Import Slider from react-slick
 
-
-export function Recipes({ showAll = false }) {
-  const [recipes, setRecipes] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Fetch recipes from the JSON file
-    async function fetchRecipes() {
-      try {
-        const response = await fetch("../../database/recipes.json");
-        const data = await response.json();
-        setRecipes(data.recipes);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching recipes:", error);
-        setLoading(false);
+export function Recipes({ showAll = false, searchTerm = "", filters = {} }) {
+    const [recipes, setRecipes] = useState([]);
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      async function fetchRecipes() {
+        try {
+          const response = await fetch("/database/recipes.json");
+          const data = await response.json();
+          setRecipes(data.recipes);
+          setLoading(false);
+        } catch (error) {
+          console.error("Error fetching recipes:", error);
+          setLoading(false);
+        }
       }
-    }
-    fetchRecipes();
-  }, []);
-
-  if (loading) return <p>Loading recipes...</p>;
-
-    // If `showAll` is true, render all recipes as a single list
-    if (showAll) {
-        return (
-          <div className="max-w-[1280px] mx-auto p-5 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-            {recipes.map((recipe) => (
-              <div
-                key={recipe.id}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-              >
-                <img
-                  src={recipe.image}
-                  alt={recipe.name}
-                  className="w-full h-32 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-md font-medium text-gray-800 mb-2">
-                    {recipe.name}
-                  </h3>
-                  <p className="text-sm text-gray-600">⏱ {recipe.total_time}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        );
-      }
+      fetchRecipes();
+    }, []);
+  
+  
+  
+    if (loading) return <p>Loading recipes...</p>;
+  
+    // Apply search and filters
+    const filteredRecipes = recipes.filter((recipe) => {
+      // Search filter: match by name or ingredient
+      const matchesSearch = searchTerm
+        ? recipe.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          recipe.ingredients.some(ingredient =>
+            ingredient.toLowerCase().includes(searchTerm.toLowerCase())
+          )
+        : true;
     
-      // Default: Group recipes by category (original behavior)
-      const categories = ["Breakfast", "Lunch", "Dinner", "Snack", "Salad"];
-      const recipesByCategory = categories.reduce((acc, category) => {
-        acc[category] = recipes.filter((recipe) => recipe.category === category);
-        return acc;
-      }, {});
-
-  return (
-    <>
-   <div className="max-w-[1280px] mx-auto p-5">
-        {categories.map((category) => (
-          <div key={category} className="mb-8">
-            <h2 className="text-xl text-gray-800 mb-4">
-              {category}
-            </h2>
-            <div className="flex gap-4 overflow-x-auto">
-              {recipesByCategory[category].map((recipe) => (
-                <div
-                  key={recipe.id}
-                  className="min-w-[200px] max-w-[200px] bg-white rounded-lg shadow-md overflow-hidden"
-                >
-                  <img
-                    src={recipe.image}
-                    alt={recipe.name}
-                    className="w-full h-32 object-cover"
-                  />
-                  <div className="p-4">
-                    <h3 className="text-md font-medium text-gray-800 mb-2">
-                      {recipe.name}
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      ⏱ {recipe.total_time}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
-    </>
-  );
-}
-
-export default Recipes;
+      // Filter based on diet flag (using boolean)
+      const matchesDiet = filters.diet
+        ? recipe[filters.diet] === true  // Filter by JSON key directly
+        : true;
+    
+      // Filter by course category
+      const matchesCourse = filters.course
+        ? recipe.category && recipe.category.toLowerCase() === filters.course.toLowerCase()
+        : true;
+    
+      // Filter based on protein flag (using boolean)
+      const matchesProtein = filters.protein
+        ? recipe[filters.protein] === true  // Filter by JSON key directly
+        : true;
+    
+      // Method (if stored as a category or tag in your JSON, ensure match)
+      const matchesMethod = filters.method
+        ? recipe.method && recipe.method.toLowerCase() === filters.method.toLowerCase()
+        : true;
+    
+      return matchesSearch && matchesDiet && matchesCourse && matchesProtein && matchesMethod;
+    });
+  
+    if (showAll) {
+      return (
+        <div className="max-w-[1280px] mx-auto p-5 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+          {filteredRecipes.map((recipe) => (
+            <Link to={`/Explore/${recipe.id}`} key={recipe.id} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img
+                src={recipe.image}
+                alt={recipe.name}
+                className="w-full h-32 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-md font-medium text-gray-800 mb-2">{recipe.name}</h3>
+                <p className="text-sm text-gray-600">⏱ {recipe.total_time}</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      );
+    }
+  
+    // If not `showAll`, render by category (original behavior)
+    // ...
+  }
+  
+  export default Recipes;
+  
 
 
 

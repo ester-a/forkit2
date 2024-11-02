@@ -6,11 +6,26 @@ import { AiOutlineDown } from "react-icons/ai";
 import { useState } from "react";
 
 export function ExploreRecipes() {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [filters, setFilters] = useState({
+    diet: "",
+    course: "",
+    protein: "",
+    method: ""
+  });
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
 
-  const handleChange = (event) => {
-    setQuery(event.target.value);
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleFilterChange = (filterName, value) => {
+    console.log(`Filter changed: ${filterName} = ${value}`);  // Debugging log
+    setFilters((prevFilters) => ({
+      ...prevFilters,
+      [filterName]: value,
+    }));
   };
 
   const toggleDropdown = (dropdown) => {
@@ -40,7 +55,7 @@ export function ExploreRecipes() {
           <form className="w-full" onSubmit={(e) => e.preventDefault()}>
             <Searchbar
               placeholder="Search recipes by name or ingredient"
-              handleInputChange={handleChange}
+              handleInputChange={handleSearchChange}
               rightIcon={<BiSearchAlt2 className="text-gray-600" />}
             />
           </form>
@@ -48,65 +63,51 @@ export function ExploreRecipes() {
 
         {/* Filters Button and Dropdowns */}
         <div className="w-full mt-5">
-          {/* Filters button only visible on screens below 1000px */}
           <button
             onClick={toggleFilters}
             className="flex items-center justify-between px-4 py-2 w-full bg-white border border-gray-300 rounded shadow hover:bg-gray-100 md:hidden"
           >
             {filtersOpen ? "Close Filters" : "Filters"}
             <AiOutlineDown
-              className={`ml-2 transition-transform duration-300 ${
-                filtersOpen ? "rotate-180" : ""
-              }`}
+              className={`ml-2 transition-transform duration-300 ${filtersOpen ? 'rotate-180' : ''}`}
             />
           </button>
 
-          {/* Dropdown Filters (Hidden on smaller screens) */}
-          <div
-            className={`mt-3 gap-4 md:flex ${
-              filtersOpen ? "block" : "hidden md:flex"
-            } flex-col md:flex-row`}
-          >
+          <div className={`mt-3 gap-4 md:flex ${filtersOpen ? 'block' : 'hidden md:flex'} flex-col md:flex-row`}>
             <DropDownButton
               label="By Diet"
-              options={[
-                "High Protein",
-                "Vegan",
-                "Vegetarian",
-                "Gluten Free",
-                "Dairy Free",
-                "Paleo",
-                "Low Carb",
-              ]}
-              isOpen={openDropdown === "recipeType"}
-              onClick={() => toggleDropdown("recipeType")}
+              options={['high_protein', 'vegan', 'vegetarian', 'gluten_free', 'dairy_free', 'paleo', 'low_carb']}  // JSON keys
+              isOpen={openDropdown === 'diet'}
+              onClick={() => toggleDropdown('diet')}
+              onSelect={(value) => handleFilterChange("diet", value)}
             />
             <DropDownButton
               label="By Course"
-              options={["Breakfast", "Lunch", "Dinner", "Snack", "Salad"]}
-              isOpen={openDropdown === "simpleEasy"}
-              onClick={() => toggleDropdown("simpleEasy")}
+              options={['Breakfast', 'Lunch', 'Dinner', 'Snack', 'Salad']}
+              isOpen={openDropdown === 'course'}
+              onClick={() => toggleDropdown('course')}
+              onSelect={(value) => handleFilterChange("course", value)}
             />
             <DropDownButton
-              label="By Protein"
-              options={["High Protein", "Low Carb"]}
-              isOpen={openDropdown === "timeToMake"}
-              onClick={() => toggleDropdown("timeToMake")}
+               label="By Protein"
+               options={['high_protein', 'low_carb']} 
+               isOpen={openDropdown === 'protein'}
+               onClick={() => toggleDropdown('protein')}
+               onSelect={(value) => handleFilterChange("protein", value)}
             />
             <DropDownButton
-              label="By Method"
-              options={[
-                "Under 30 min",
-                "Under 15 min",
-                "5 Ingredients or Less",
-              ]}
-              isOpen={openDropdown === "dietaryOption"}
-              onClick={() => toggleDropdown("dietaryOption")}
+               label="By Method"
+               options={['under 30 minutes', 'under 15 minutes', '5 ingredients or less']}  
+               isOpen={openDropdown === 'method'}
+               onClick={() => toggleDropdown('method')}
+               onSelect={(value) => handleFilterChange("method", value)}
             />
           </div>
         </div>
       </div>
-      <Recipes showAll={true} />
+
+      {/* Pass searchTerm and filters to Recipes */}
+      <Recipes showAll={true} searchTerm={searchTerm} filters={filters} />
     </>
   );
 }
