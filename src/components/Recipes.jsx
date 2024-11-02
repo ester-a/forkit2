@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
-// import recipes from '../../database/recipes.json'
+import { Link } from "react-router-dom";
 
-// Define recipe categories (must match the categories in the recipe data)
-const categories = ["Breakfast", "Lunch", "Dinner", "Snack", "Salad"];
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick"; // Import Slider from react-slick
 
-export function Recipes() {
+
+export function Recipes({ showAll = false }) {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -24,17 +26,44 @@ export function Recipes() {
     fetchRecipes();
   }, []);
 
-  // Group recipes by category
-  const recipesByCategory = categories.reduce((acc, category) => {
-    acc[category] = recipes.filter((recipe) => recipe.category === category);
-    return acc;
-  }, {});
-
   if (loading) return <p>Loading recipes...</p>;
+
+    // If `showAll` is true, render all recipes as a single list
+    if (showAll) {
+        return (
+          <div className="max-w-[1280px] mx-auto p-5 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+            {recipes.map((recipe) => (
+              <div
+                key={recipe.id}
+                className="bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <img
+                  src={recipe.image}
+                  alt={recipe.name}
+                  className="w-full h-32 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-md font-medium text-gray-800 mb-2">
+                    {recipe.name}
+                  </h3>
+                  <p className="text-sm text-gray-600">⏱ {recipe.total_time}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        );
+      }
+    
+      // Default: Group recipes by category (original behavior)
+      const categories = ["Breakfast", "Lunch", "Dinner", "Snack", "Salad"];
+      const recipesByCategory = categories.reduce((acc, category) => {
+        acc[category] = recipes.filter((recipe) => recipe.category === category);
+        return acc;
+      }, {});
 
   return (
     <>
-      <div className="max-w-[1280px] mx-auto p-5">
+   <div className="max-w-[1280px] mx-auto p-5">
         {categories.map((category) => (
           <div key={category} className="mb-8">
             <h2 className="text-xl text-gray-800 mb-4">
@@ -70,3 +99,6 @@ export function Recipes() {
 }
 
 export default Recipes;
+
+
+

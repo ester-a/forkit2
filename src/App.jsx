@@ -1,8 +1,8 @@
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
-import { Header } from './components/Header'
 import Home from "./pages/Home";
 import ExploreRecipes from './pages/ExploreRecipes';
+import RecipeDetail from './pages/RecipeDetail';
 
 import './App.css'
 import {
