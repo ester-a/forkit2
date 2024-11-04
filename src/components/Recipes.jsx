@@ -14,9 +14,10 @@ export function Recipes({ showAll = false }) {
     // Fetch recipes from the JSON file
     async function fetchRecipes() {
       try {
-        const response = await fetch("../../database/recipes.json");
+        const response = await fetch("http://localhost:3000/recipes");
         const data = await response.json();
-        setRecipes(data.recipes);
+        console.log(data)
+        setRecipes(data);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching recipes:", error);
@@ -31,12 +32,13 @@ export function Recipes({ showAll = false }) {
     // If `showAll` is true, render all recipes as a single list
     if (showAll) {
         return (
-          <div className="max-w-[1280px] mx-auto p-5 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="max-w-[1280px] mx-auto p-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
             {recipes.map((recipe) => (
               <div
                 key={recipe.id}
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
+                <Link to={`/recipe/${recipe.id}`}>
                 <img
                   src={recipe.image}
                   alt={recipe.name}
@@ -48,6 +50,7 @@ export function Recipes({ showAll = false }) {
                   </h3>
                   <p className="text-sm text-gray-600">⏱ {recipe.total_time}</p>
                 </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -75,6 +78,7 @@ export function Recipes({ showAll = false }) {
                   key={recipe.id}
                   className="min-w-[200px] max-w-[200px] bg-white rounded-lg shadow-md overflow-hidden"
                 >
+                    <Link to={`/recipe/${recipe.id}`}>
                   <img
                     src={recipe.image}
                     alt={recipe.name}
@@ -88,9 +92,11 @@ export function Recipes({ showAll = false }) {
                       ⏱ {recipe.total_time}
                     </p>
                   </div>
+                  </Link>
                 </div>
               ))}
             </div>
+            
           </div>
         ))}
       </div>

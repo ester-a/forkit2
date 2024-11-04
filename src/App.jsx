@@ -3,6 +3,9 @@ import { Footer } from './components/Footer';
 import Home from "./pages/Home";
 import ExploreRecipes from './pages/ExploreRecipes';
 import RecipeDetail from './pages/RecipeDetail';
+import SavedRecipes from './pages/SavedRecipes';
+import Login from './pages/Login';
+import Register from './pages/Register'
 
 import './App.css'
 import {
@@ -22,9 +25,8 @@ function Layout() {
   );
 }
 
-function App() {
+export function App() {
   
-
   return (
     <>  
       <BrowserRouter>
@@ -32,9 +34,11 @@ function App() {
         {/* Vychozi stranka cele aplikace */}
         <Route path="/" element={<Layout />}> 
           <Route index element={<Home />} />
-          <Route path="Explore" element={<ExploreRecipes />}>
-            {/* <Route path=":recipeId" element={<RecipeDetail/>}/> */}
-            </Route>
+          <Route path="explore" element={<ExploreRecipes />} />
+          <Route path="recipe/:recipeId" element={<RecipeDetail/>}/>  
+          <Route path="saved" element={<SavedRecipes />} />  
+          <Route path="login" element={<Login />} /> 
+          <Route path="signup" element={<Register />} /> 
         </Route>
       </Routes>
       </BrowserRouter>
@@ -42,4 +46,6 @@ function App() {
   )
 }
 
-export default App
+export default App;
+
+
