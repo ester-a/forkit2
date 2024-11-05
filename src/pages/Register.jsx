@@ -52,12 +52,13 @@ export function Register() {
             Create Your Account
           </h2>
         </div>
+        {message && <p>{message}</p>}
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form onSubmit={handleSubmit} className="space-y-6" action="#" method="POST">
             <div>
               <label
-                for="text"
+                htmlFor="text"
                 className="block text-sm/6 font-medium text-gray-900"
               >
                 First Name
@@ -70,7 +71,7 @@ export function Register() {
                   autoComplete="first-name"
                   required
                   onChange={e => setFirstName(e.target.value)}
-                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm/6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm/6"
                 />
               </div>
             </div>
@@ -78,7 +79,7 @@ export function Register() {
             <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <div>
               <label
-                for="text"
+                htmlFor="text"
                 className="block text-sm/6 font-medium text-gray-900"
               >
                 Last Name
@@ -91,7 +92,7 @@ export function Register() {
                   onChange={e => setLastName(e.target.value)}
                   autoComplete="last-name"
                   required
-                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm/6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm/6"
                 />
               </div>
             </div>
@@ -100,7 +101,7 @@ export function Register() {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <div>
               <label
-                for="email"
+                htmlFor="email"
                 className="block text-sm/6 font-medium text-gray-900"
               >
                 Email address
@@ -123,7 +124,7 @@ export function Register() {
             <div>
               <div className="flex items-center justify-between">
                 <label
-                  for="password"
+                  htmlFor="password"
                   className="block text-sm/6 font-medium text-gray-900"
                 >
                   Password

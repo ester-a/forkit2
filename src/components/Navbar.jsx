@@ -1,8 +1,8 @@
 import { TfiHome } from "react-icons/tfi";
 import { GoSearch } from "react-icons/go";
 import { CiSaveDown2 } from "react-icons/ci";
-import { CiLogin } from "react-icons/ci";
 import { Link, useLocation } from "react-router-dom";
+import { UserStatus } from './UserStatus'
 
 export function Navbar() {
     const location = useLocation(); // useLocation is used to get the current path.
@@ -47,16 +47,7 @@ export function Navbar() {
                 Saved
               </Link>
             </nav>
-
-            <Link to="/login" className="text-gray-700 hover:text-gray-400">
-              <CiLogin className="text-lg inline-block mr-1" /> Log in
-            </Link>
-            <Link
-              to="/signup"
-              className="px-4 py-2 text-white bg-black rounded hover:bg-gray-300 hover:text-black"
-            >
-              Sign up
-            </Link>
+            <UserStatus/>
           </div>
         </div>
       </header>
