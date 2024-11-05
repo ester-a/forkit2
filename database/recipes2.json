@@ -6,7 +6,6 @@
             "category": "Breakfast",
             "servings": 2,
             "calories_per_portion": 250,
-            "nutrition": {
               "protein": "11g",
               "carbs": "28g",
               "fat": "12g",
@@ -14,8 +13,7 @@
               "Polyunsaturated Fat": "1g",
               "Monounsaturated Fat": "7g",
               "fiber": "7g",
-              "sugar": "2g"
-            },
+              "sugar": "2g",
             "total_time": "15 minutes",
             "cuisine": "American",
             "gluten_free": false,
@@ -25,20 +23,9 @@
             "paleo": false,
             "low_carb": false,
             "high_protein": false,
-            "ingredients": [
-              "2 slices whole grain bread",
-              "1 avocado",
-              "2 eggs",
-              "1 tsp lemon juice",
-              "Salt and pepper to taste",
-              "Red pepper flakes (optional)"
-            ],
-            "instructions": [
-              "Toast the bread slices until crispy.",
-              "Mash the avocado with lemon juice, salt, and pepper.",
-              "Poach the eggs by boiling water and gently lowering eggs into the water for 3-4 minutes.",
-              "Spread avocado on toast, top with poached eggs, and sprinkle with red pepper flakes."
-            ],
+            "ingredients": "2 slices whole grain bread\n1 avocado\n2 eggs\n1 tsp lemon juice\nSalt and pepper to taste\nRed pepper flakes (optional)",
+            "instructions": "Toast the bread slices until crispy.\nMash the avocado with lemon juice, salt, and pepper.\nPoach the eggs by boiling water and gently lowering eggs into the water for 3-4 minutes.\nSpread avocado on toast, top with poached eggs, and sprinkle with red pepper flakes.",
+            
             "image": "/images/recipes/breakfast/avo-with-poached-egg.webp"
           },
           {
@@ -47,7 +34,6 @@
             "category": "Breakfast",
             "servings": 2,
             "calories_per_portion": 180,
-            "nutrition": {
               "protein": "10g",
               "carbs": "20g",
               "fat": "6g",
@@ -55,8 +41,7 @@
               "Polyunsaturated Fat": "0.5g",
               "Monounsaturated Fat": "2g",
               "fiber": "3g",
-              "sugar": "10g"
-            },
+              "sugar": "10g",
             "total_time": "10 minutes",
             "cuisine": "Mediterranean",
             "gluten_free": true,
@@ -66,18 +51,8 @@
             "paleo": false,
             "low_carb": false,
             "high_protein": true,
-            "ingredients": [
-              "1 cup plain Greek yogurt",
-              "1/2 cup granola",
-              "1/2 cup mixed berries",
-              "1 tbsp honey",
-              "1 tsp chia seeds"
-            ],
-            "instructions": [
-              "Layer Greek yogurt, granola, and berries in a cup or bowl.",
-              "Drizzle honey over the top and sprinkle chia seeds.",
-              "Serve immediately."
-            ],
+            "ingredients": "1 cup plain Greek yogurt\n1/2 cup granola\n1/2 cup mixed berries\n1 tbsp honey\n1 tsp chia seeds",
+            "instructions": "Layer Greek yogurt, granola, and berries in a cup or bowl.\nDrizzle honey over the top and sprinkle chia seeds.\nServe immediately.",
             "image": "/images/recipes/breakfast/Yogurt-Parfaits.jpg"
           },
           {
@@ -86,7 +61,6 @@
             "category": "Lunch",
             "servings": 2,
             "calories_per_portion": 350,
-            "nutrition": {
               "protein": "30g",
               "carbs": "15g",
               "fat": "18g",
@@ -94,8 +68,7 @@
               "Polyunsaturated Fat": "4g",
               "Monounsaturated Fat": "10g",
               "fiber": "5g",
-              "sugar": "6g"
-            },
+              "sugar": "6g",
             "total_time": "20 minutes",
             "cuisine": "Mediterranean",
             "gluten_free": true,
@@ -105,22 +78,8 @@
             "paleo": true,
             "low_carb": true,
             "high_protein": true,
-            "ingredients": [
-              "2 grilled chicken breasts",
-              "4 cups mixed greens",
-              "1/2 cucumber, sliced",
-              "1/4 cup cherry tomatoes",
-              "1/4 cup red onion, sliced",
-              "2 tbsp olive oil",
-              "1 tbsp balsamic vinegar",
-              "Salt and pepper to taste"
-            ],
-            "instructions": [
-              "Grill the chicken breasts until fully cooked and slice them.",
-              "Mix the greens, cucumber, cherry tomatoes, and onion in a large bowl.",
-              "In a small bowl, whisk together olive oil, balsamic vinegar, salt, and pepper.",
-              "Toss the salad with the dressing and top with sliced grilled chicken."
-            ],
+            "ingredients": "2 grilled chicken breasts\n4 cups mixed greens\n1/2 cucumber, sliced\n1/4 cup cherry tomatoes\n1/4 cup red onion, sliced\n2 tbsp olive oil\n1 tbsp balsamic vinegar\nSalt and pepper to taste",
+            "instructions": "Grill the chicken breasts until fully cooked and slice them.\nMix the greens, cucumber, cherry tomatoes, and onion in a large bowl.\nIn a small bowl, whisk together olive oil, balsamic vinegar, salt, and pepper.\nToss the salad with the dressing and top with sliced grilled chicken.",
             "image": "/images/recipes/lunch/grilled-chicken-salad.jpg"
           },
           {
@@ -129,7 +88,6 @@
             "category": "Lunch",
             "servings": 2,
             "calories_per_portion": 300,
-            "nutrition": {
               "protein": "14g",
               "carbs": "40g",
               "fat": "8g",
@@ -137,8 +95,7 @@
               "Polyunsaturated Fat": "2g",
               "Monounsaturated Fat": "4g",
               "fiber": "10g",
-              "sugar": "3g"
-            },
+              "sugar": "3g",
             "total_time": "25 minutes",
             "cuisine": "South American",
             "gluten_free": true,
@@ -148,22 +105,8 @@
             "paleo": false,
             "low_carb": false,
             "high_protein": true,
-            "ingredients": [
-              "1/2 cup quinoa",
-              "1 cup black beans (canned or cooked)",
-              "1/2 avocado, diced",
-              "1/2 red bell pepper, diced",
-              "1/4 cup corn",
-              "1 tbsp lime juice",
-              "1 tbsp olive oil",
-              "Salt and pepper to taste"
-            ],
-            "instructions": [
-              "Cook quinoa according to package instructions.",
-              "In a large bowl, combine quinoa, black beans, avocado, bell pepper, and corn.",
-              "Drizzle with olive oil and lime juice, then toss to combine.",
-              "Season with salt and pepper."
-            ],
+            "ingredients": "1/2 cup quinoa\n1 cup black beans (canned or cooked)\n1/2 avocado, diced\n1/2 red bell pepper, diced\n1/4 cup corn\n1 tbsp lime juice\n1 tbsp olive oil\nSalt and pepper to taste",
+            "instructions": "Cook quinoa according to package instructions.\nIn a large bowl, combine quinoa, black beans, avocado, bell pepper, and corn.\nDrizzle with olive oil and lime juice, then toss to combine.\nSeason with salt and pepper.",
             "image": "/images/recipes/lunch/quinoa-and-black-beans.jpg" 
           },
           {
@@ -172,7 +115,6 @@
             "category": "Dinner",
             "servings": 2,
             "calories_per_portion": 400,
-            "nutrition": {
               "protein": "32g",
               "carbs": "6g",
               "fat": "28g",
@@ -180,8 +122,7 @@
               "Polyunsaturated Fat": "5g",
               "Monounsaturated Fat": "16g",
               "fiber": "3g",
-              "sugar": "2g"
-            },
+              "sugar": "2g",
             "total_time": "20 minutes",
             "cuisine": "Mediterranean",
             "gluten_free": true,
@@ -191,21 +132,8 @@
             "paleo": true,
             "low_carb": true,
             "high_protein": true,
-            "ingredients": [
-              "2 salmon fillets",
-              "1 bunch asparagus, trimmed",
-              "2 tbsp olive oil",
-              "1 tbsp lemon juice",
-              "1 tsp garlic powder",
-              "Salt and pepper to taste"
-            ],
-            "instructions": [
-              "Preheat grill to medium heat.",
-              "Brush salmon and asparagus with olive oil, then season with garlic powder, salt, and pepper.",
-              "Grill salmon for 5-6 minutes per side, or until cooked through.",
-              "Grill asparagus for 4-5 minutes, turning occasionally.",
-              "Drizzle salmon and asparagus with lemon juice before serving."
-            ],
+            "ingredients": "2 salmon fillets\n1 bunch asparagus, trimmed\n2 tbsp olive oil\n1 tbsp lemon juice\n1 tsp garlic powder\nSalt and pepper to taste",
+            "instructions": "Preheat grill to medium heat\nBrush salmon and asparagus with olive oil, then season with garlic powder, salt, and pepper.\nGrill salmon for 5-6 minutes per side, or until cooked through.\nGrill asparagus for 4-5 minutes, turning occasionally.\nDrizzle salmon and asparagus with lemon juice before serving.",
             "image": "/images/recipes/dinner/Salmon_Asparagus.webp"
           },
           {
@@ -214,7 +142,6 @@
             "category": "Dinner",
             "servings": 2,
             "calories_per_portion": 350,
-            "nutrition": {
               "protein": "15g",
               "carbs": "40g",
               "fat": "15g",
@@ -222,8 +149,7 @@
               "Polyunsaturated Fat": "5g",
               "Monounsaturated Fat": "7g",
               "fiber": "8g",
-              "sugar": "6g"
-            },
+              "sugar": "6g",
             "total_time": "25 minutes",
             "cuisine": "Asian",
             "gluten_free": true,
@@ -233,23 +159,8 @@
             "paleo": false,
             "low_carb": false,
             "high_protein": false,
-            "ingredients": [
-              "200g firm tofu, cubed",
-              "1 cup broccoli florets",
-              "1 red bell pepper, sliced",
-              "1 carrot, julienned",
-              "1 tbsp soy sauce",
-              "1 tbsp sesame oil",
-              "1 clove garlic, minced",
-              "1 tsp ginger, grated"
-            ],
-            "instructions": [
-              "Heat sesame oil in a pan over medium heat.",
-              "Add tofu cubes and cook until golden, about 5 minutes.",
-              "Remove tofu and add garlic, ginger, broccoli, bell pepper, and carrot to the pan.",
-              "Stir-fry for 5-7 minutes, then add tofu back in.",
-              "Drizzle with soy sauce and toss to coat before serving."
-            ],
+            "ingredients": "200g firm tofu, cubed\n1 cup broccoli florets\n1 red bell pepper, sliced\n1 carrot, julienned\n1 tbsp soy sauce\n1 tbsp sesame oil\n1 clove garlic, minced\n1 tsp ginger, grated",
+            "instructions": "Heat sesame oil in a pan over medium heat.\nAdd tofu cubes and cook until golden, about 5 minutes.\nRemove tofu and add garlic, ginger, broccoli, bell pepper, and carrot to the pan.\nStir-fry for 5-7 minutes, then add tofu back in.\nDrizzle with soy sauce and toss to coat before serving.",
             "image": "/images/recipes/dinner/Tofu-Stir-Fry.jpg"
           },
           {
@@ -258,7 +169,6 @@
             "category": "Snack",
             "servings": 2,
             "calories_per_portion": 150,
-            "nutrition": {
               "protein": "4g",
               "carbs": "18g",
               "fat": "9g",
@@ -266,8 +176,7 @@
               "Polyunsaturated Fat": "2g",
               "Monounsaturated Fat": "6g",
               "fiber": "4g",
-              "sugar": "12g"
-            },
+              "sugar": "12g",
             "total_time": "5 minutes",
             "cuisine": "American",
             "gluten_free": true,
@@ -277,14 +186,8 @@
             "paleo": true,
             "low_carb": false,
             "high_protein": false,
-            "ingredients": [
-              "1 apple, sliced",
-              "2 tbsp almond butter"
-            ],
-            "instructions": [
-              "Slice the apple into wedges.",
-              "Serve with almond butter for dipping."
-            ],
+            "ingredients": "1 apple, sliced\n2 tbsp almond butter",
+            "instructions": "Slice the apple into wedges.\nServe with almond butter for dipping.",
             "image": "/images/recipes/snacks/Almond-Butter-Apples.jpg"
           },
           {
@@ -293,7 +196,6 @@
             "category": "Snack",
             "servings": 2,
             "calories_per_portion": 200,
-            "nutrition": {
               "protein": "6g",
               "carbs": "25g",
               "fat": "10g",
@@ -301,8 +203,7 @@
               "Polyunsaturated Fat": "2g",
               "Monounsaturated Fat": "4g",
               "fiber": "5g",
-              "sugar": "10g"
-            },
+              "sugar": "10g",
             "total_time": "15 minutes",
             "cuisine": "American",
             "gluten_free": true,
@@ -312,17 +213,8 @@
             "paleo": false,
             "low_carb": false,
             "high_protein": false,
-            "ingredients": [
-              "1/2 cup rolled oats",
-              "1/4 cup peanut butter",
-              "1/4 cup dried cranberries",
-              "1/4 cup sunflower seeds",
-              "1 tbsp honey"
-            ],
-            "instructions": [
-              "Mix all ingredients together in a large bowl until well combined.",
-              "Roll into bite-sized balls and refrigerate for 10 minutes before serving."
-            ],
+            "ingredients": "1/2 cup rolled oats\n1/4 cup peanut butter\n1/4 cup dried cranberries\n1/4 cup sunflower seeds\n1 tbsp honey",
+            "instructions": "Mix all ingredients together in a large bowl until well combined\nRoll into bite-sized balls and refrigerate for 10 minutes before serving.",
             "image": "/images/recipes/snacks/Trail-Mix-Energy-Bites.webp"
           },
 {
@@ -331,7 +223,6 @@
     "category": "Salad",
     "servings": 2,
     "calories_per_portion": 220,
-    "nutrition": {
       "protein": "8g",
       "carbs": "35g",
       "fat": "7g",
@@ -339,8 +230,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "4g",
       "fiber": "6g",
-      "sugar": "3g"
-    },
+      "sugar": "3g",
     "total_time": "20 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -350,20 +240,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1/2 cup cooked quinoa",
-      "2 cups kale, chopped",
-      "1/4 cup almonds, sliced",
-      "1/4 cup dried cranberries",
-      "2 tbsp olive oil",
-      "1 tbsp lemon juice",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "Massage kale with olive oil and lemon juice for 2-3 minutes.",
-      "In a large bowl, mix quinoa, massaged kale, almonds, and cranberries.",
-      "Season with salt and pepper before serving."
-    ],
+    "ingredients": "1/2 cup cooked quinoa\n2 cups kale, chopped\n1/4 cup almonds, sliced\n1/4 cup dried cranberries\n2 tbsp olive oil\n1 tbsp lemon juice\nSalt and pepper to taste",
+    "instructions": "Massage kale with olive oil and lemon juice for 2-3 minutes.\nIn a large bowl, mix quinoa, massaged kale, almonds, and cranberries.\nSeason with salt and pepper before serving.",
     "image": "/images/recipes/salads/quinoa-salad.jpg"
   },
   {
@@ -372,7 +250,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 450,
-    "nutrition": {
       "protein": "30g",
       "carbs": "40g",
       "fat": "20g",
@@ -380,8 +257,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "10g",
       "fiber": "8g",
-      "sugar": "10g"
-    },
+      "sugar": "10g",
     "total_time": "40 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -391,20 +267,8 @@
     "paleo": true,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "2 chicken breasts",
-      "2 medium sweet potatoes",
-      "1 tbsp olive oil",
-      "1 tsp paprika",
-      "1 tsp garlic powder",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "Preheat oven to 400°F (200°C).",
-      "Rub chicken with olive oil, paprika, garlic powder, salt, and pepper.",
-      "Peel and cube sweet potatoes, tossing them in olive oil, salt, and pepper.",
-      "Bake chicken and sweet potatoes for 30-35 minutes or until fully cooked."
-    ],
+    "ingredients": "2 chicken breasts\n2 medium sweet potatoes\n1 tbsp olive oil\n1 tsp paprika\n1 tsp garlic powder\nSalt and pepper to taste",
+    "instructions": "Preheat oven to 400°F (200°C).\nRub chicken with olive oil, paprika, garlic powder, salt, and pepper.\nPeel and cube sweet potatoes, tossing them in olive oil, salt, and pepper.\nBake chicken and sweet potatoes for 30-35 minutes or until fully cooked.",
     "image": "/images/recipes/dinner/chicken-sweet-potatoes.jpg"
   },
   {
@@ -413,7 +277,6 @@
     "category": "Lunch",
     "servings": 2,
     "calories_per_portion": 250,
-    "nutrition": {
       "protein": "8g",
       "carbs": "30g",
       "fat": "10g",
@@ -421,8 +284,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "6g",
       "fiber": "6g",
-      "sugar": "4g"
-    },
+      "sugar": "4g",
     "total_time": "10 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -432,19 +294,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 cup canned chickpeas, drained",
-      "1/4 cup diced celery",
-      "1/4 cup diced cucumber",
-      "2 tbsp vegan mayo",
-      "Salt and pepper to taste",
-      "2 large lettuce leaves"
-    ],
-    "instructions": [
-      "Mash the chickpeas with a fork.",
-      "Mix in celery, cucumber, vegan mayo, salt, and pepper.",
-      "Spoon the chickpea mixture onto the lettuce leaves and wrap."
-    ],
+    "ingredients": "1 cup canned chickpeas, drained\n1/4 cup diced celery\n1/4 cup diced cucumber\n2 tbsp vegan mayo\nSalt and pepper to taste\n2 large lettuce leaves",
+    "instructions": "Mash the chickpeas with a fork.\nMix in celery, cucumber, vegan mayo, salt, and pepper.\nSpoon the chickpea mixture onto the lettuce leaves and wrap.",
     "image": "/images/recipes/lunch/chickpea-wrap.webp"
   },
   {
@@ -453,7 +304,6 @@
     "category": "Lunch",
     "servings": 2,
     "calories_per_portion": 300,
-    "nutrition": {
       "protein": "10g",
       "carbs": "45g",
       "fat": "12g",
@@ -461,8 +311,7 @@
       "Polyunsaturated Fat": "4g",
       "Monounsaturated Fat": "6g",
       "fiber": "10g",
-      "sugar": "5g"
-    },
+      "sugar": "5g",
     "total_time": "20 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -472,20 +321,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1/2 cup quinoa, cooked",
-      "1/2 cup chickpeas",
-      "1/2 cup steamed broccoli",
-      "1/4 avocado, sliced",
-      "1 tbsp tahini",
-      "1 tbsp lemon juice",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "Layer quinoa, chickpeas, broccoli, and avocado in a bowl.",
-      "Drizzle with tahini and lemon juice.",
-      "Season with salt and pepper."
-    ],
+    "ingredients": "1/2 cup quinoa, cooked\n1/2 cup chickpeas\n1/2 cup steamed broccoli\n1/4 avocado, sliced\n1 tbsp tahini\n1 tbsp lemon juice\nSalt and pepper to taste",
+    "instructions": "Layer quinoa, chickpeas, broccoli, and avocado in a bowl.\nDrizzle with tahini and lemon juice.\nSeason with salt and pepper.",
     "image": "/images/recipes/lunch/budha-bowl.jpg"
   },
   {
@@ -494,7 +331,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 280,
-    "nutrition": {
       "protein": "12g",
       "carbs": "35g",
       "fat": "8g",
@@ -502,8 +338,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "5g",
       "fiber": "10g",
-      "sugar": "4g"
-    },
+      "sugar": "4g",
     "total_time": "25 minutes",
     "cuisine": "Asian",
     "gluten_free": true,
@@ -513,20 +348,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1/2 cup cooked lentils",
-      "1 bell pepper, sliced",
-      "1 cup spinach",
-      "1/4 cup carrots, julienned",
-      "1 tbsp soy sauce",
-      "1 tbsp sesame oil",
-      "1 clove garlic, minced"
-    ],
-    "instructions": [
-      "Heat sesame oil in a pan and add garlic.",
-      "Add bell pepper, spinach, and carrots, and stir-fry for 5 minutes.",
-      "Stir in lentils and soy sauce, and cook until warm."
-    ],
+    "ingredients": "1/2 cup cooked lentils\n1 bell pepper, sliced\n1 cup spinach\n1/4 cup carrots, julienned\n1 tbsp soy sauce\n1 tbsp sesame oil\n1 clove garlic, minced",
+    "instructions": "Heat sesame oil in a pan and add garlic.\nAdd bell pepper, spinach, and carrots, and stir-fry for 5 minutes.\nStir in lentils and soy sauce, and cook until warm.",
     "image": "/images/recipes/dinner/vegan-lentil-stir-fry.webp"
   },
   {
@@ -535,7 +358,6 @@
     "category": "Breakfast",
     "servings": 2,
     "calories_per_portion": 180,
-    "nutrition": {
       "protein": "5g",
       "carbs": "32g",
       "fat": "5g",
@@ -543,8 +365,7 @@
       "Polyunsaturated Fat": "1g",
       "Monounsaturated Fat": "2g",
       "fiber": "8g",
-      "sugar": "18g"
-    },
+      "sugar": "18g",
     "total_time": "5 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -554,17 +375,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 cup spinach",
-      "1 banana",
-      "1/2 avocado",
-      "1/2 cup almond milk",
-      "1 tbsp chia seeds"
-    ],
-    "instructions": [
-      "Blend spinach, banana, avocado, and almond milk until smooth.",
-      "Pour into a bowl and top with chia seeds."
-    ],
+    "ingredients": "1 cup spinach\n1 banana\n1/2 avocado\n1/2 cup almond milk\n1 tbsp chia seeds",
+    "instructions": "Blend spinach, banana, avocado, and almond milk until smooth.\nPour into a bowl and top with chia seeds.",
     "image": "/images/recipes/breakfast/green-smoothie-bowl.jpg"
   },
   {
@@ -573,7 +385,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 400,
-    "nutrition": {
       "protein": "35g",
       "carbs": "20g",
       "fat": "18g",
@@ -581,8 +392,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "9g",
       "fiber": "5g",
-      "sugar": "6g"
-    },
+      "sugar": "6g",
     "total_time": "30 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -592,18 +402,8 @@
     "paleo": true,
     "low_carb": true,
     "high_protein": true,
-    "ingredients": [
-      "2 chicken breasts",
-      "1 cup broccoli florets",
-      "1/2 cup bell pepper, sliced",
-      "1 tbsp olive oil",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "Preheat grill and cook chicken breasts until done, about 6 minutes per side.",
-      "Roast broccoli and bell pepper with olive oil, salt, and pepper at 400°F for 15 minutes.",
-      "Serve chicken with roasted vegetables."
-    ],
+    "ingredients": "2 chicken breasts\n1 cup broccoli florets\n1/2 cup bell pepper, sliced\n1 tbsp olive oil\nSalt and pepper to taste",
+    "instructions": "Preheat grill and cook chicken breasts until done, about 6 minutes per side.\nRoast broccoli and bell pepper with olive oil, salt, and pepper at 400°F for 15 minutes.\nServe chicken with roasted vegetables.",
     "image": "/images/recipes/dinner/grilled-chicken-roasted-veg.jpg"
   },
   {
@@ -612,7 +412,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 350,
-    "nutrition": {
       "protein": "30g",
       "carbs": "12g",
       "fat": "18g",
@@ -620,8 +419,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "8g",
       "fiber": "4g",
-      "sugar": "6g"
-    },
+      "sugar": "6g",
     "total_time": "30 minutes",
     "cuisine": "Italian",
     "gluten_free": true,
@@ -631,18 +429,8 @@
     "paleo": false,
     "low_carb": true,
     "high_protein": true,
-    "ingredients": [
-      "200g ground turkey",
-      "1/4 cup breadcrumbs",
-      "1 egg",
-      "1 tsp Italian seasoning",
-      "2 zucchinis, spiralized"
-    ],
-    "instructions": [
-      "Mix turkey, breadcrumbs, egg, and seasoning, and form into meatballs.",
-      "Bake meatballs at 375°F for 20 minutes.",
-      "Saute zucchini noodles in a pan for 2-3 minutes and serve with meatballs."
-    ],
+    "ingredients": "200g ground turkey\n1/4 cup breadcrumbs\n1 egg\n1 tsp Italian seasoning\n2 zucchinis, spiralized",
+    "instructions": "Mix turkey, breadcrumbs, egg, and seasoning, and form into meatballs.\nBake meatballs at 375°F for 20 minutes.\nSaute zucchini noodles in a pan for 2-3 minutes and serve with meatballs.",
     "image": "/images/recipes/dinner/turkey-meatballs-with-zucchini.jpg"
   },
   {
@@ -651,7 +439,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 320,
-    "nutrition": {
       "protein": "12g",
       "carbs": "45g",
       "fat": "10g",
@@ -659,8 +446,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "5g",
       "fiber": "8g",
-      "sugar": "6g"
-    },
+      "sugar": "6g",
     "total_time": "35 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -670,25 +456,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1/2 cup quinoa, cooked",
-      "2 bell peppers",
-      "1/4 cup black beans, drained",
-      "1/4 cup corn kernels",
-      "1/4 cup diced tomatoes",
-      "1 tsp olive oil",
-      "Salt and pepper to taste",
-      "1 tbsp chopped parsley"
-    ],
-    "instructions": [
-      "Preheat oven to 375°F (190°C).",
-      "Cut the tops off the bell peppers and remove the seeds.",
-      "Mix cooked quinoa, black beans, corn, tomatoes, olive oil, salt, and pepper in a bowl.",
-      "Stuff the bell peppers with the quinoa mixture.",
-      "Place the peppers in a baking dish and cover with foil.",
-      "Bake for 25 minutes, then remove foil and bake for an additional 5 minutes.",
-      "Garnish with parsley before serving."
-    ],
+    "ingredients": "1/2 cup quinoa, cooked\n2 bell peppers\n1/4 cup black beans, drained\n1/4 cup corn kernels\n1/4 cup diced tomatoes\n1 tsp olive oil\nSalt and pepper to taste\n1 tbsp chopped parsley",
+    "instructions":"Preheat oven to 375°F (190°C).\nCut the tops off the bell peppers and remove the seeds.\nMix cooked quinoa, black beans, corn, tomatoes, olive oil, salt, and pepper in a bowl.\nStuff the bell peppers with the quinoa mixture.\nPlace the peppers in a baking dish and cover with foil.\nBake for 25 minutes, then remove foil and bake for an additional 5 minutes.\nGarnish with parsley before serving.",
     "image": "/images/recipes/dinner/stuffed-peppers.jpg"
   },
 
@@ -698,7 +467,6 @@
     "category": "Breakfast",
     "servings": 2,
     "calories_per_portion": 200,
-    "nutrition": {
       "protein": "12g",
       "carbs": "8g",
       "fat": "10g",
@@ -706,8 +474,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "4g",
       "fiber": "3g",
-      "sugar": "2g"
-    },
+      "sugar": "2g",
     "total_time": "10 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -717,18 +484,8 @@
     "paleo": false,
     "low_carb": true,
     "high_protein": false,
-    "ingredients": [
-      "1/2 block firm tofu",
-      "1/4 cup bell pepper, diced",
-      "1/4 cup onion, diced",
-      "1 tsp turmeric",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "Crumble tofu with hands.",
-      "Saute bell pepper and onion until soft.",
-      "Add tofu and turmeric, and cook for 5 minutes."
-    ],
+    "ingredients": "1/2 block firm tofu\n1/4 cup bell pepper, diced\n1/4 cup onion, diced\n1 tsp turmeric\nSalt and pepper to taste",
+    "instructions": "Crumble tofu with hands.\nSaute bell pepper and onion until soft.\nAdd tofu and turmeric, and cook for 5 minutes.",
     "image": "/images/recipes/breakfast/Tofu-Scramble.webp"
   },
   {
@@ -737,7 +494,6 @@
     "category": "Lunch",
     "servings": 2,
     "calories_per_portion": 230,
-    "nutrition": {
       "protein": "15g",
       "carbs": "35g",
       "fat": "3g",
@@ -745,8 +501,7 @@
       "Polyunsaturated Fat": "1g",
       "Monounsaturated Fat": "1g",
       "fiber": "12g",
-      "sugar": "5g"
-    },
+      "sugar": "5g",
     "total_time": "30 minutes",
     "cuisine": "Middle Eastern",
     "gluten_free": true,
@@ -756,25 +511,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "1/2 cup dry lentils, rinsed",
-      "4 cups vegetable broth",
-      "1 cup spinach leaves",
-      "1/4 cup diced carrots",
-      "1/4 cup diced celery",
-      "1/4 cup diced onion",
-      "1 clove garlic, minced",
-      "1/2 tsp cumin",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "In a pot, sauté onion, carrot, and celery until soft, about 5 minutes.",
-      "Add garlic and cumin, and cook for another minute.",
-      "Pour in vegetable broth and lentils, and bring to a boil.",
-      "Reduce heat and simmer for 20 minutes or until lentils are tender.",
-      "Stir in spinach and cook until wilted, about 2 minutes.",
-      "Season with salt and pepper before serving."
-    ],
+    "ingredients": "1/2 cup dry lentils, rinsed\n4 cups vegetable broth\n1 cup spinach leaves\n1/4 cup diced carrots\n1/4 cup diced celery\n1/4 cup diced onion\n1 clove garlic, minced\n1/2 tsp cumin\nSalt and pepper to taste",
+    "instructions": "In a pot, sauté onion, carrot, and celery until soft, about 5 minutes.\nAdd garlic and cumin, and cook for another minute.\nPour in vegetable broth and lentils, and bring to a boil.\nReduce heat and simmer for 20 minutes or until lentils are tender.\nStir in spinach and cook until wilted, about 2 minutes.\nSeason with salt and pepper before serving.",
     "image": "/images/recipes/lunch/lentil-spinach-soup.webp"
   },
   {
@@ -783,7 +521,6 @@
     "category": "Salad",
     "servings": 2,
     "calories_per_portion": 250,
-    "nutrition": {
       "protein": "10g",
       "carbs": "10g",
       "fat": "20g",
@@ -791,8 +528,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "10g",
       "fiber": "6g",
-      "sugar": "2g"
-    },
+      "sugar": "2g",
     "total_time": "10 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -802,19 +538,8 @@
     "paleo": true,
     "low_carb": true,
     "high_protein": false,
-    "ingredients": [
-      "2 hard-boiled eggs, chopped",
-      "1 avocado, diced",
-      "1/4 cup diced cucumber",
-      "1 tbsp lemon juice",
-      "Salt and pepper to taste",
-      "1 tbsp chopped chives"
-    ],
-    "instructions": [
-      "In a bowl, combine chopped eggs, avocado, and cucumber.",
-      "Drizzle with lemon juice, and season with salt and pepper.",
-      "Gently mix ingredients together, then top with chives before serving."
-    ],
+    "ingredients": "2 hard-boiled eggs, chopped\n1 avocado, diced\n1/4 cup diced cucumber\n1 tbsp lemon juice\nSalt and pepper to taste\n1 tbsp chopped chives",
+    "instructions": "In a bowl, combine chopped eggs, avocado, and cucumber.\nDrizzle with lemon juice, and season with salt and pepper.\nGently mix ingredients together, then top with chives before serving.",
     "image": "/images/recipes/salads/avocado-egg-salad.jpg"
   },
   {
@@ -823,7 +548,6 @@
     "category": "Breakfast",
     "servings": 2,
     "calories_per_portion": 135,
-    "nutrition": {
       "protein": "4g",
       "carbs": "13g",
       "fat": "8g",
@@ -831,8 +555,7 @@
       "Polyunsaturated Fat": "5g",
       "Monounsaturated Fat": "2g",
       "fiber": "5g",
-      "sugar": "6g"
-    },
+      "sugar": "6g",
     "total_time": "35 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -842,19 +565,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 cup unsweetened almond milk, or milk of choice",
-      "½ cup frozen or fresh blueberries, plus more for topping",
-      "2 teaspoons maple syrup, plus more as needed",
-      "½ teaspoon vanilla extract",
-      "3 Tablespoons chia seeds"
-    ],
-    "instructions": [
-      "Add milk, blueberries, maple syrup and vanilla to a blender and blend until smooth and combined.",
-      "Add blueberry milk to a mason jar and stir in chia seeds. Let sit for 5 minutes then stir the mixture", 
-      "again to get out any clumps that may have formed. Place mixture in the fridge to set, at least 30 minutes but up to 12 hours.",
-      "When ready to enjoy, top with fresh blueberries and granola."
-    ],
+    "ingredients": "1 cup unsweetened almond milk, or milk of choice\n½ cup frozen or fresh blueberries, plus more for topping\n2 teaspoons maple syrup, plus more as needed\n½ teaspoon vanilla extract\n3 Tablespoons chia seeds",
+    "instructions": "Add milk, blueberries, maple syrup and vanilla to a blender and blend until smooth and combined.\nAdd blueberry milk to a mason jar and stir in chia seeds. Let sit for 5 minutes then stir the mixture\nagain to get out any clumps that may have formed. Place mixture in the fridge to set, at least 30 minutes but up to 12 hours.\nWhen ready to enjoy, top with fresh blueberries and granola.",
     "image": "/images/recipes/breakfast/blueberry-chia-pudding.webp"
   },
 
@@ -864,7 +576,6 @@
     "category": "Lunch",
     "servings": 2,
     "calories_per_portion": 667,
-    "nutrition": {
       "protein": "37g",
       "carbs": "57g",
       "fat": "35g",
@@ -872,8 +583,7 @@
       "Polyunsaturated Fat": "14g",
       "Monounsaturated Fat": "13g",
       "fiber": "12g",
-      "sugar": "22g"
-    },
+      "sugar": "22g",
     "total_time": "30 minutes",
     "cuisine": "Hawaiian",
     "gluten_free": true,
@@ -883,33 +593,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "1 cup cooked sushi rice, short grain white or brown rice, served warm",
-      "½ lb sushi grade Ahi tuna, cut into ½ inch cubes",
-      "¼ cup reduced sodium tamari, soy sauce or coconut aminos",
-      "1 Tablespoon fresh lime juice",
-      "1 teaspoon sesame oil",
-      "1 mango, chopped into ½ cubes",
-      "1 cup cucumber, chopped",
-      "1 jalapeno pepper, sliced",
-      "2 green onions, chopped",
-      "1 avocado, sliced",
-      "½ cup radishes, thinly sliced",
-      "¼ cup seaweed salad",
-      "Black sesame seeds, for topping",
-      "3 Tablespoons mayo",
-      "1 teaspoon Sriracha"
-    ],
-    "instructions": [
-      "Whisk together tamari, lime juice and sesame oil in a small mixing bowl. Add",
-      "chopped tuna and mix so that all of the pieces are coated in the sauce. Place in", 
-      "the fridge to marinate for 5-10 minutes while you prep the veggies and sauce.",
-      "Whisk together mayo and sriracha in a small bowl. Add water as needed to reach.",
-      "desired consistency. Set aside.",
-      "Add ½ cup cooked rice to two bowls and top each bowl with tuna, cucumber,",
-      "mango, jalapeno, green onions, avocado, radishes and seaweed salad. Drizzle",
-      "on sriracha mayo and sprinkle with black sesame seeds. Serve immediately."
-    ],
+    "ingredients": "1 cup cooked sushi rice, short grain white or brown rice, served warm\n½ lb sushi grade Ahi tuna, cut into ½ inch cubes\n¼ cup reduced sodium tamari, soy sauce or coconut aminos\n1 Tablespoon fresh lime juice\n1 teaspoon sesame oil\n1 mango, chopped into ½ cubes\n1 cup cucumber, chopped\n1 jalapeno pepper, sliced\n2 green onions, chopped\n1 avocado, sliced\n½ cup radishes, thinly sliced\n¼ cup seaweed salad\nBlack sesame seeds, for topping\n3 Tablespoons mayo\n1 teaspoon Sriracha",
+    "instructions": "Whisk together tamari, lime juice and sesame oil in a small mixing bowl. Add\nchopped tuna and mix so that all of the pieces are coated in the sauce. Place in\nthe fridge to marinate for 5-10 minutes while you prep the veggies and sauce.\nWhisk together mayo and sriracha in a small bowl. Add water as needed to reach desired consistency. Set aside.\nAdd ½ cup cooked rice to two bowls and top each bowl with tuna, cucumber,\nmango, jalapeno, green onions, avocado, radishes and seaweed salad. Drizzle\non sriracha mayo and sprinkle with black sesame seeds. Serve immediately.",
     "image": "/images/recipes/lunch/poke-bowl.jpg"
   },
   {
@@ -918,15 +603,13 @@
     "category": "Dinner",
     "servings": 4,
     "calories_per_portion": 284,
-    "nutrition": {
       "protein": "14g",
       "carbs": "17g",
       "fat": "18g",
       "Saturated Fat": "6g",
       "Polyunsaturated Fat": "6g",
       "fiber": "3g",
-      "sugar": "8g"
-    },
+      "sugar": "8g",
     "total_time": "50 minutes",
     "cuisine": "Middle Eastern",
     "gluten_free": true,
@@ -936,36 +619,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "2 Tablespoons olive oil",
-      "1 large onion, chopped",
-      "1 orange bell pepper, chopped",
-      "4 cloves garlic, minced",
-      "½ teaspoon cumin",
-      "½ teaspoon paprika",
-      "¼ teaspoon cayenne pepper",
-      "1-2 teaspoons curry powder",
-      "¼ teaspoon turmeric",
-      "½ teaspoon sea salt",
-      "¼ teaspoon ground pepper",
-      "28 ounce can diced tomatoes",
-      "4-5 eggs",
-      "½ cup feta cheese",
-      "fresh cilantro and parsley, for serving"
-    ],
-    "instructions": [
-      "Heat oil in a large skillet over medium heat. Add onion, bell pepper and garlic to",
-      "the skillet and cook until onions are soft and fragrant — about 5 to 10 minutes.", 
-      "Add cumin, paprika, cayenne, curry, turmeric, salt and pepper. Give the mixture a stir and cook for about 1 minute more.",
-      "Add diced tomatoes to the skillet and bring sauce to a boil. Reduce heat to a simmer and cook until the sauce thickens up a bit,",
-      "about 10 minutes. Add feta cheese to the tomato mixture and stir.",
-      "Crack eggs into tomato sauce. You should be able to fit 4-5 eggs in a large skillet. ",
-      "Cover and let the eggs cook for about 5 minutes, or until the egg whites are completely cooked through.",
-      "Remove skillet from heat, uncover and let sit for a 1-2 minutes before serving.",
-      "Spoon 1-2 eggs along with a big serving of tomato sauce on to each plate.",
-      "Garnish with extra feta cheese and fresh cilantro and parsley. Serve with toast,",
-      "veggies or over a whole grain like quinoa or brown rice for a complete meal."
-    ],
+    "ingredients": "2 Tablespoons olive oil\n1 large onion, chopped\n1 orange bell pepper, chopped\n4 cloves garlic, minced\n½ teaspoon cumin\n½ teaspoon paprika\n¼ teaspoon cayenne pepper\n1-2 teaspoons curry powder\n¼ teaspoon turmeric\n½ teaspoon sea salt\n¼ teaspoon ground pepper\n28 ounce can diced tomatoes\n4-5 eggs\n½ cup feta cheese\nfresh cilantro and parsley, for serving",
+    "instructions": "Heat oil in a large skillet over medium heat. Add onion, bell pepper and garlic to\nthe skillet and cook until onions are soft and fragrant — about 5 to 10 minutes.\nAdd cumin, paprika, cayenne, curry, turmeric, salt and pepper. Give the mixture a stir and cook for about 1 minute more.\nAdd diced tomatoes to the skillet and bring sauce to a boil. Reduce heat to a simmer and cook until the sauce thickens up a bit,\nabout 10 minutes. Add feta cheese to the tomato mixture and stir.\nCrack eggs into tomato sauce. You should be able to fit 4-5 eggs in a large skillet.\nCover and let the eggs cook for about 5 minutes, or until the egg whites are completely cooked through.\nRemove skillet from heat, uncover and let sit for a 1-2 minutes before serving.\nSpoon 1-2 eggs along with a big serving of tomato sauce on to each plate.\nGarnish with extra feta cheese and fresh cilantro and parsley. Serve with toast,\nveggies or over a whole grain like quinoa or brown rice for a complete meal.",
     "image": "/images/recipes/dinner/shakshuka.jpg"
   },
   {
@@ -974,7 +629,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 300,
-    "nutrition": {
       "protein": "12g",
       "carbs": "40g",
       "fat": "8g",
@@ -982,8 +636,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "4g",
       "fiber": "10g",
-      "sugar": "4g"
-    },
+      "sugar": "4g",
     "total_time": "25 minutes",
     "cuisine": "Mexican",
     "gluten_free": true,
@@ -993,22 +646,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "1 cup cooked lentils",
-      "1/4 cup diced onion",
-      "1/4 cup diced bell pepper",
-      "1 tsp olive oil",
-      "1 tsp taco seasoning",
-      "4 corn tortillas",
-      "1/4 cup shredded lettuce",
-      "1/4 cup diced tomatoes"
-    ],
-    "instructions": [
-      "Heat olive oil in a pan over medium heat.",
-      "Add onion and bell pepper, cook until softened.",
-      "Add cooked lentils and taco seasoning, stir to combine.",
-      "Spoon lentil mixture into corn tortillas and top with shredded lettuce and tomatoes."
-    ],
+    "ingredients": "1 cup cooked lentils\n1/4 cup diced onion\n1/4 cup diced bell pepper\n1 tsp olive oil\n1 tsp taco seasoning\n4 corn tortillas\n1/4 cup shredded lettuce\n1/4 cup diced tomatoes",
+    "instructions": "Heat olive oil in a pan over medium heat.\nAdd onion and bell pepper, cook until softened.\nAdd cooked lentils and taco seasoning, stir to combine.\nSpoon lentil mixture into corn tortillas and top with shredded lettuce and tomatoes.",
     "image": "/images/recipes/dinner/vegan-lentil-tacos.webp"
   },
 
@@ -1018,7 +657,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 350,
-    "nutrition": {
       "protein": "25g",
       "carbs": "40g",
       "fat": "10g",
@@ -1026,8 +664,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "4g",
       "fiber": "6g",
-      "sugar": "8g"
-    },
+      "sugar": "8g",
     "total_time": "25 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -1037,22 +674,8 @@
     "paleo": true,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "200g ground turkey",
-      "1 medium sweet potato, diced",
-      "1/2 bell pepper, diced",
-      "1/4 cup diced onion",
-      "1 tbsp olive oil",
-      "Salt and pepper to taste",
-      "1/2 tsp paprika",
-      "1/4 tsp garlic powder"
-    ],
-    "instructions": [
-      "Heat olive oil in a skillet over medium heat.",
-      "Add ground turkey and cook until browned.",
-      "Add sweet potato, bell pepper, onion, salt, pepper, paprika, and garlic powder.",
-      "Cover and cook for 15 minutes, stirring occasionally, until sweet potato is tender."
-    ],
+    "ingredients": "200g ground turkey\n1 medium sweet potato, diced\n1/2 bell pepper, diced\n1/4 cup diced onion\n1 tbsp olive oil\nSalt and pepper to taste\n1/2 tsp paprika\n1/4 tsp garlic powder",
+    "instructions": "Heat olive oil in a skillet over medium heat.\nAdd ground turkey and cook until browned.\nAdd sweet potato, bell pepper, onion, salt, pepper, paprika, and garlic powder.\nCover and cook for 15 minutes, stirring occasionally, until sweet potato is tender.",
     "image": "/images/recipes/dinner/turkey-sweet-potato.webp"
   },
   
@@ -1062,7 +685,6 @@
     "category": "Snack",
     "servings": 2,
     "calories_per_portion": 180,
-    "nutrition": {
       "protein": "4g",
       "carbs": "20g",
       "fat": "9g",
@@ -1070,8 +692,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "5g",
       "fiber": "3g",
-      "sugar": "8g"
-    },
+      "sugar": "8g",
     "total_time": "10 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -1081,16 +702,8 @@
     "paleo": true,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 banana, sliced",
-      "2 tbsp almond butter",
-      "1 tbsp chia seeds"
-    ],
-    "instructions": [
-      "Slice the banana into rounds.",
-      "Spread almond butter onto one side of each banana slice and sprinkle with chia seeds.",
-      "Place another banana slice on top to make a sandwich."
-    ],
+    "ingredients": "1 banana, sliced\n2 tbsp almond butter\n1 tbsp chia seeds",
+    "instructions": "Slice the banana into rounds.\nSpread almond butter onto one side of each banana slice and sprinkle with chia seeds.\nPlace another banana slice on top to make a sandwich.",
     "image": "/images/recipes/snacks/almond-butter-banana-bites.webp"
   },
   {
@@ -1099,7 +712,6 @@
     "category": "Lunch",
     "servings": 2,
     "calories_per_portion": 320,
-    "nutrition": {
       "protein": "25g",
       "carbs": "8g",
       "fat": "20g",
@@ -1107,8 +719,7 @@
       "Polyunsaturated Fat": "5g",
       "Monounsaturated Fat": "10g",
       "fiber": "6g",
-      "sugar": "1g"
-    },
+      "sugar": "1g",
     "total_time": "15 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -1118,20 +729,8 @@
     "paleo": true,
     "low_carb": true,
     "high_protein": true,
-    "ingredients": [
-      "1 cup cooked, diced chicken breast",
-      "1 avocado, diced",
-      "1 cup mixed greens",
-      "1/2 cucumber, sliced",
-      "1 tbsp olive oil",
-      "1 tbsp lemon juice",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "In a bowl, combine chicken, avocado, mixed greens, and cucumber.",
-      "Drizzle with olive oil and lemon juice. Add salt and pepper to taste.",
-      "Toss gently and serve."
-    ],
+    "ingredients": "1 cup cooked, diced chicken breast\n1 avocado, diced\n1 cup mixed greens\n1/2 cucumber, sliced\n1 tbsp olive oil\n1 tbsp lemon juice\nSalt and pepper to taste",
+    "instructions": "In a bowl, combine chicken, avocado, mixed greens, and cucumber.\nDrizzle with olive oil and lemon juice. Add salt and pepper to taste.\nToss gently and serve.",
     "image": "/images/recipes/lunch/avo-chicken-salad.webp"
   },
   {
@@ -1140,7 +739,6 @@
     "category": "Snack",
     "servings": 2,
     "calories_per_portion": 150,
-    "nutrition": {
       "protein": "8g",
       "carbs": "16g",
       "fat": "6g",
@@ -1148,8 +746,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "3g",
       "fiber": "5g",
-      "sugar": "1g"
-    },
+      "sugar": "1g",
     "total_time": "5 minutes",
     "cuisine": "Middle Eastern",
     "gluten_free": true,
@@ -1159,15 +756,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "1/2 cup hummus",
-      "1/2 cup sliced cucumber",
-      "1/2 cup baby carrots",
-      "1/4 cup cherry tomatoes"
-    ],
-    "instructions": [
-      "Arrange sliced cucumber, baby carrots, and cherry tomatoes on a plate with hummus for dipping."
-    ],
+    "ingredients": "1/2 cup hummus\n1/2 cup sliced cucumber\n1/2 cup baby carrots\n1/4 cup cherry tomatoes",
+    "instructions": "Arrange sliced cucumber, baby carrots, and cherry tomatoes on a plate with hummus for dipping.",
     "image": "/images/recipes/snacks/hummus.jpg"
   },
 
@@ -1177,7 +767,6 @@
     "category": "Breakfast", 
     "servings": 2,
     "calories_per_portion": 120,
-    "nutrition": {
       "protein": "10g",
       "carbs": "5g",
       "fat": "8g",
@@ -1185,8 +774,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "4g",
       "fiber": "1g",
-      "sugar": "1g"
-    },
+      "sugar": "1g",
     "total_time": "20 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -1196,19 +784,8 @@
     "paleo": true,
     "low_carb": true,
     "high_protein": true,
-    "ingredients": [
-      "4 eggs",
-      "1/4 cup diced bell pepper",
-      "1/4 cup spinach, chopped",
-      "Salt and pepper to taste",
-      "1/4 tsp onion powder"
-    ],
-    "instructions": [
-      "Preheat oven to 350°F (175°C) and grease a muffin tin.",
-      "In a bowl, whisk eggs, bell pepper, spinach, salt, pepper, and onion powder.",
-      "Pour the mixture into muffin tin, filling each cup halfway.",
-      "Bake for 15 minutes or until eggs are set."
-    ],
+    "ingredients": "4 eggs\n1/4 cup diced bell pepper\n1/4 cup spinach, chopped\nSalt and pepper to taste\n1/4 tsp onion powder",
+    "instructions": "Preheat oven to 350°F (175°C) and grease a muffin tin.\nIn a bowl, whisk eggs, bell pepper, spinach, salt, pepper, and onion powder.\nPour the mixture into muffin tin, filling each cup halfway.\nBake for 15 minutes or until eggs are set.",
     "image": "/images/recipes/breakfast/breakfast-egg-muffins.webp"
   },
   {
@@ -1217,7 +794,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 370,
-    "nutrition": {
       "protein": "15g",
       "carbs": "60g",
       "fat": "8g",
@@ -1225,8 +801,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "5g",
       "fiber": "18g",
-      "sugar": "10g"
-    },
+      "sugar": "10g",
     "total_time": "45 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -1236,28 +811,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1/2 cup green or brown lentils, rinsed",
-      "1 medium sweet potato, diced",
-      "1/2 cup diced carrots",
-      "1/2 cup diced celery",
-      "1/2 cup diced onion",
-      "2 garlic cloves, minced",
-      "1 cup vegetable broth",
-      "1 cup water",
-      "1/2 tsp ground cumin",
-      "1/2 tsp smoked paprika",
-      "Salt and pepper to taste",
-      "1 tbsp olive oil",
-      "1/4 cup chopped fresh parsley"
-    ],
-    "instructions": [
-      "In a large pot, heat olive oil over medium heat and sauté the onions, carrots, and celery for 5 minutes, until softened.",
-      "Add minced garlic, cumin, and smoked paprika, and cook for another minute until fragrant.",
-      "Stir in lentils, sweet potato, vegetable broth, and water.",
-      "Bring to a boil, then reduce heat to low and let simmer for 30-35 minutes, until lentils and sweet potatoes are tender.",
-      "Season with salt and pepper to taste and garnish with chopped parsley before serving."
-    ],
+    "ingredients": "1/2 cup green or brown lentils, rinsed\n1 medium sweet potato, diced\n1/2 cup diced carrots\n1/2 cup diced celery\n1/2 cup diced onion\n2 garlic cloves, minced\n1 cup vegetable broth\n1 cup water\n1/2 tsp ground cumin\n1/2 tsp smoked paprika\nSalt and pepper to taste\n1 tbsp olive oil\n1/4 cup chopped fresh parsley",
+    "instructions": "In a large pot, heat olive oil over medium heat and sauté the onions, carrots, and celery for 5 minutes, until softened.\nAdd minced garlic, cumin, and smoked paprika, and cook for another minute until fragrant.\nStir in lentils, sweet potato, vegetable broth, and water.\nBring to a boil, then reduce heat to low and let simmer for 30-35 minutes, until lentils and sweet potatoes are tender.\nSeason with salt and pepper to taste and garnish with chopped parsley before serving.",
     "image": "/images/recipes/dinner/lentil-sweet-potato-stew.webp"
   },
   {
@@ -1266,7 +821,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 320,
-    "nutrition": {
       "protein": "14g",
       "carbs": "45g",
       "fat": "8g",
@@ -1274,8 +828,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "3g",
       "fiber": "10g",
-      "sugar": "7g"
-    },
+      "sugar": "7g",
     "total_time": "30 minutes",
     "cuisine": "Indian",
     "gluten_free": true,
@@ -1285,24 +838,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 cup chickpeas, cooked",
-      "2 cups fresh spinach",
-      "1 small onion, diced",
-      "1 clove garlic, minced",
-      "1 tsp ginger, grated",
-      "1 tsp curry powder",
-      "1/2 tsp turmeric",
-      "1/2 cup coconut milk",
-      "1 tbsp olive oil",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "Heat olive oil in a pan over medium heat and sauté onions until translucent.",
-      "Add garlic, ginger, curry powder, and turmeric, cooking for another minute.",
-      "Add chickpeas and coconut milk, stirring to combine.",
-      "Simmer for 10 minutes, then add spinach and cook until wilted. Season to taste."
-    ],
+    "ingredients": "1 cup chickpeas, cooked\n2 cups fresh spinach\n1 small onion, diced\n1 clove garlic, minced\n1 tsp ginger, grated\n1 tsp curry powder\n1/2 tsp turmeric\n1/2 cup coconut milk\n1 tbsp olive oil\nSalt and pepper to taste",
+    "instructions": "Heat olive oil in a pan over medium heat and sauté onions until translucent.\nAdd garlic, ginger, curry powder, and turmeric, cooking for another minute.\nAdd chickpeas and coconut milk, stirring to combine.\nSimmer for 10 minutes, then add spinach and cook until wilted. Season to taste.",
     "image": "/images/recipes/dinner/chickpea-spinach-curry.jpg"
   },
   {
@@ -1311,7 +848,6 @@
     "category": "Breakfast",
     "servings": 2,
     "calories_per_portion": 250,
-    "nutrition": {
       "protein": "8g",
       "carbs": "40g",
       "fat": "7g",
@@ -1319,8 +855,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "4g",
       "fiber": "6g",
-      "sugar": "8g"
-    },
+      "sugar": "8g",
     "total_time": "5 minutes prep, overnight",
     "cuisine": "American",
     "gluten_free": true,
@@ -1330,20 +865,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 cup rolled oats",
-      "2 cups almond milk",
-      "1 cup mixed berries (strawberries, blueberries, raspberries)",
-      "1 tbsp chia seeds",
-      "1 tbsp maple syrup (optional)",
-      "1/2 tsp vanilla extract"
-    ],
-    "instructions": [
-      "In a bowl, combine oats, almond milk, chia seeds, and vanilla extract.",
-      "Stir well and add maple syrup if desired.",
-      "Divide the mixture into two jars and top with mixed berries.",
-      "Cover and refrigerate overnight."
-    ],
+    "ingredients": "1 cup rolled oats\n2 cups almond milk\n1 cup mixed berries (strawberries, blueberries, raspberries)\n1 tbsp chia seeds\n1 tbsp maple syrup (optional)\n1/2 tsp vanilla extract",
+    "instructions": "In a bowl, combine oats, almond milk, chia seeds, and vanilla extract.\nStir well and add maple syrup if desired.\nDivide the mixture into two jars and top with mixed berries.\nCover and refrigerate overnight.",
     "image": "/images/recipes/breakfast/overnight-oats.jpg"
   },
   {
@@ -1352,7 +875,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 300,
-    "nutrition": {
       "protein": "10g",
       "carbs": "15g",
       "fat": "25g",
@@ -1360,8 +882,7 @@
       "Polyunsaturated Fat": "4g",
       "Monounsaturated Fat": "18g",
       "fiber": "5g",
-      "sugar": "3g"
-    },
+      "sugar": "3g",
     "total_time": "20 minutes",
     "cuisine": "Italian",
     "gluten_free": true,
@@ -1371,19 +892,8 @@
     "paleo": true,
     "low_carb": true,
     "high_protein": false,
-    "ingredients": [
-      "2 medium zucchinis, spiralized",
-      "1/2 cup pesto",
-      "1 cup cherry tomatoes, halved",
-      "1 tbsp olive oil",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "Heat olive oil in a pan over medium heat.",
-      "Add zucchini noodles and cook for 2-3 minutes until slightly softened.",
-      "Stir in pesto and cherry tomatoes, cooking for another 2 minutes.",
-      "Season with salt and pepper, then serve."
-    ],
+    "ingredients": "2 medium zucchinis, spiralized\n1/2 cup pesto\n1 cup cherry tomatoes, halved\n1 tbsp olive oil\nSalt and pepper to taste",
+    "instructions": "Heat olive oil in a pan over medium heat.\nAdd zucchini noodles and cook for 2-3 minutes until slightly softened.\nStir in pesto and cherry tomatoes, cooking for another 2 minutes.\nSeason with salt and pepper, then serve.",
     "image": "/images/recipes/dinner/zucchini-noodles-with-pesto.webp"
   },
   {
@@ -1392,7 +902,6 @@
     "category": "Lunch",
     "servings": 2,
     "calories_per_portion": 400,
-    "nutrition": {
       "protein": "15g",
       "carbs": "65g",
       "fat": "10g",
@@ -1400,8 +909,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "5g",
       "fiber": "12g",
-      "sugar": "5g"
-    },
+      "sugar": "5g",
     "total_time": "35 minutes",
     "cuisine": "Mexican",
     "gluten_free": true,
@@ -1411,20 +919,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "2 small sweet potatoes, cubed",
-      "1 can black beans, rinsed and drained",
-      "4 corn tortillas",
-      "1 avocado, sliced",
-      "1/2 tsp cumin",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "Preheat oven to 400°F (200°C).",
-      "Toss sweet potatoes with olive oil, cumin, salt, and pepper. Roast for 25 minutes.",
-      "Heat tortillas in a pan until warm.",
-      "Assemble tacos with roasted sweet potatoes, black beans, and avocado."
-    ],
+    "ingredients": "2 small sweet potatoes, cubed\n1 can black beans, rinsed and drained\n4 corn tortillas\n1 avocado, sliced\n1/2 tsp cumin\nSalt and pepper to taste",
+    "instructions": "Preheat oven to 400°F (200°C).\nToss sweet potatoes with olive oil, cumin, salt, and pepper. Roast for 25 minutes.\nHeat tortillas in a pan until warm.\nAssemble tacos with roasted sweet potatoes, black beans, and avocado.",
     "image": "/images/recipes/lunch/sweet-potato-bean-taco.avif"
   },
   {
@@ -1433,7 +929,6 @@
     "category": "Dinner",
     "servings": 4,
     "calories_per_portion": 200,
-    "nutrition": {
       "protein": "12g",
       "carbs": "30g",
       "fat": "4g",
@@ -1441,8 +936,7 @@
       "Polyunsaturated Fat": "1g",
       "Monounsaturated Fat": "2g",
       "fiber": "10g",
-      "sugar": "5g"
-    },
+      "sugar": "5g",
     "total_time": "40 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -1452,20 +946,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 cup lentils, rinsed",
-      "1 carrot, diced",
-      "1 onion, diced",
-      "2 cloves garlic, minced",
-      "4 cups vegetable broth",
-      "1 tsp cumin",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "In a pot, sauté onion, garlic, and carrot until soft.",
-      "Add lentils, vegetable broth, cumin, salt, and pepper.",
-      "Bring to a boil, then simmer for 30 minutes until lentils are tender."
-    ],
+    "ingredients": "1 cup lentils, rinsed\n1 carrot, diced\n1 onion, diced\n2 cloves garlic, minced\n4 cups vegetable broth\n1 tsp cumin\nSalt and pepper to taste",
+    "instructions": "In a pot, sauté onion, garlic, and carrot until soft.\nAdd lentils, vegetable broth, cumin, salt, and pepper.\nBring to a boil, then simmer for 30 minutes until lentils are tender.",
     "image": "/images/recipes/dinner/lentil-soup.jpg"
   },
   {
@@ -1474,7 +956,6 @@
     "category": "Salad",
     "servings": 2,
     "calories_per_portion": 150,
-    "nutrition": {
       "protein": "3g",
       "carbs": "8g",
       "fat": "12g",
@@ -1482,8 +963,7 @@
       "Polyunsaturated Fat": "1g",
       "Monounsaturated Fat": "9g",
       "fiber": "5g",
-      "sugar": "2g"
-    },
+      "sugar": "2g",
     "total_time": "10 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -1493,19 +973,8 @@
     "paleo": true,
     "low_carb": true,
     "high_protein": false,
-    "ingredients": [
-      "1 ripe avocado, diced",
-      "2 medium tomatoes, diced",
-      "1/4 red onion, thinly sliced",
-      "2 tbsp olive oil",
-      "Juice of 1 lemon",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "In a bowl, combine avocado, tomatoes, and red onion.",
-      "Drizzle with olive oil and lemon juice, then season with salt and pepper.",
-      "Toss gently and serve."
-    ],
+    "ingredients": "1 ripe avocado, diced\n2 medium tomatoes, diced\n1/4 red onion, thinly sliced\n2 tbsp olive oil\nJuice of 1 lemon\nSalt and pepper to taste",
+    "instructions": "In a bowl, combine avocado, tomatoes, and red onion.\nDrizzle with olive oil and lemon juice, then season with salt and pepper.\nToss gently and serve.",
     "image": "/images/recipes/salads/avocado-tomato-salad.jpg"
   },
   {
@@ -1514,7 +983,6 @@
     "category": "Breakfast",
     "servings": 2,
     "calories_per_portion": 220,
-    "nutrition": {
       "protein": "16g",
       "carbs": "5g",
       "fat": "15g",
@@ -1522,8 +990,7 @@
       "Polyunsaturated Fat": "1g",
       "Monounsaturated Fat": "9g",
       "fiber": "1g",
-      "sugar": "2g"
-    },
+      "sugar": "2g",
     "total_time": "15 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -1533,20 +1000,8 @@
     "paleo": true,
     "low_carb": true,
     "high_protein": true,
-    "ingredients": [
-      "4 eggs",
-      "2 cups fresh spinach, chopped",
-      "1/4 cup feta cheese, crumbled",
-      "1 tbsp olive oil",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "In a bowl, whisk eggs with salt and pepper.",
-      "Heat olive oil in a skillet over medium heat.",
-      "Add spinach and sauté until wilted.",
-      "Pour in the eggs and cook until the edges start to set.",
-      "Sprinkle feta cheese on one half and fold the omelette over. Cook for another minute."
-    ],
+    "ingredients": "4 eggs\n2 cups fresh spinach, chopped\n1/4 cup feta cheese, crumbled\n1 tbsp olive oil\nSalt and pepper to taste",
+    "instructions": "In a bowl, whisk eggs with salt and pepper.\nHeat olive oil in a skillet over medium heat.\nAdd spinach and sauté until wilted.\nPour in the eggs and cook until the edges start to set.\nSprinkle feta cheese on one half and fold the omelette over. Cook for another minute.",
     "image": "/images/recipes/breakfast/spinach-and-feta-omelet.jpg"
   },
   {
@@ -1555,7 +1010,6 @@
     "category": "Lunch",
     "servings": 2,
     "calories_per_portion": 300,
-    "nutrition": {
       "protein": "25g",
       "carbs": "30g",
       "fat": "10g",
@@ -1563,8 +1017,7 @@
       "Polyunsaturated Fat": "1g",
       "Monounsaturated Fat": "6g",
       "fiber": "5g",
-      "sugar": "3g"
-    },
+      "sugar": "3g",
     "total_time": "10 minutes",
     "cuisine": "American",
     "gluten_free": false,
@@ -1574,19 +1027,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "4 whole wheat tortillas",
-      "1 lb turkey breast, sliced",
-      "2 cups fresh spinach",
-      "1/2 avocado, sliced",
-      "1 tomato, sliced",
-      "Mustard or hummus for spreading"
-    ],
-    "instructions": [
-      "Spread mustard or hummus on each tortilla.",
-      "Layer turkey, spinach, avocado, and tomato on top.",
-      "Roll the tortilla tightly and slice in half to serve."
-    ],
+    "ingredients": "4 whole wheat tortillas\n1 lb turkey breast, sliced\n2 cups fresh spinach\n1/2 avocado, sliced\n1 tomato, sliced\nMustard or hummus for spreading",
+    "instructions": "Spread mustard or hummus on each tortilla.\nLayer turkey, spinach, avocado, and tomato on top.\nRoll the tortilla tightly and slice in half to serve.",
     "image": "/images/recipes/lunch/turkey-spinach-wrap.webp"
   },
   {
@@ -1595,7 +1037,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 400,
-    "nutrition": {
       "protein": "15g",
       "carbs": "60g",
       "fat": "12g",
@@ -1603,8 +1044,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "7g",
       "fiber": "10g",
-      "sugar": "5g"
-    },
+      "sugar": "5g",
     "total_time": "35 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -1614,21 +1054,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 cup quinoa, cooked",
-      "1 zucchini, diced",
-      "1 bell pepper, diced",
-      "1 red onion, diced",
-      "1 cup cherry tomatoes",
-      "2 tbsp olive oil",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "Preheat oven to 425°F (220°C).",
-      "Toss zucchini, bell pepper, red onion, and cherry tomatoes in olive oil, salt, and pepper.",
-      "Spread vegetables on a baking sheet and roast for 25 minutes.",
-      "Serve roasted veggies over quinoa."
-    ],
+    "ingredients": "1 cup quinoa, cooked\n1 zucchini, diced\n1 bell pepper, diced\n1 red onion, diced\n1 cup cherry tomatoes\n2 tbsp olive oil\nSalt and pepper to taste",
+    "instructions": "Preheat oven to 425°F (220°C).\nToss zucchini, bell pepper, red onion, and cherry tomatoes in olive oil, salt, and pepper.\nSpread vegetables on a baking sheet and roast for 25 minutes.\nServe roasted veggies over quinoa.",
     "image": "/images/recipes/dinner/roasted-vegetable-quinoa-bowl.jpg"
   },
   {
@@ -1637,7 +1064,6 @@
     "category": "Snack",
     "servings": 2,
     "calories_per_portion": 150,
-    "nutrition": {
       "protein": "5g",
       "carbs": "12g",
       "fat": "9g",
@@ -1645,8 +1071,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "5g",
       "fiber": "10g",
-      "sugar": "3g"
-    },
+      "sugar": "3g",
     "total_time": "5 minutes prep, 2 hours chilling",
     "cuisine": "American",
     "gluten_free": true,
@@ -1656,19 +1081,8 @@
     "paleo": true,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1/4 cup chia seeds",
-      "1 cup almond milk",
-      "1 tbsp maple syrup (optional)",
-      "1/2 tsp vanilla extract",
-      "Fresh fruit for topping"
-    ],
-    "instructions": [
-      "In a bowl, combine chia seeds, almond milk, maple syrup, and vanilla extract.",
-      "Stir well and let sit for 10 minutes, then stir again to prevent clumping.",
-      "Cover and refrigerate for at least 2 hours or overnight.",
-      "Serve topped with fresh fruit."
-    ],
+    "ingredients": "1/4 cup chia seeds\n1 cup almond milk\n1 tbsp maple syrup (optional)\n1/2 tsp vanilla extract\nFresh fruit for topping",
+    "instructions": "In a bowl, combine chia seeds, almond milk, maple syrup, and vanilla extract.\nStir well and let sit for 10 minutes, then stir again to prevent clumping.\nCover and refrigerate for at least 2 hours or overnight.\nServe topped with fresh fruit.",
     "image": "/images/recipes/snacks/chia-pudding.jpg"
   },
 
@@ -1678,7 +1092,6 @@
     "category": "Breakfast",
     "servings": 2,
     "calories_per_portion": 250,
-    "nutrition": {
       "protein": "8g",
       "carbs": "40g",
       "fat": "8g",
@@ -1686,8 +1099,7 @@
       "Polyunsaturated Fat": "1g",
       "Monounsaturated Fat": "6g",
       "fiber": "8g",
-      "sugar": "5g"
-    },
+      "sugar": "5g",
     "total_time": "5 minutes prep, overnight chilling",
     "cuisine": "American",
     "gluten_free": true,
@@ -1697,20 +1109,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 cup rolled oats",
-      "2 cups almond milk",
-      "1/4 cup sliced almonds",
-      "1 cup mixed berries",
-      "1 tbsp maple syrup (optional)",
-      "1/2 tsp vanilla extract"
-    ],
-    "instructions": [
-      "In a jar, combine oats, almond milk, maple syrup, and vanilla extract.",
-      "Stir in sliced almonds and mixed berries.",
-      "Cover and refrigerate overnight.",
-      "In the morning, stir and enjoy."
-    ],
+    "ingredients": "1 cup rolled oats\n2 cups almond milk\n1/4 cup sliced almonds\n1 cup mixed berries\n1 tbsp maple syrup (optional)\n1/2 tsp vanilla extract",
+    "instructions": "In a jar, combine oats, almond milk, maple syrup, and vanilla extract.\nStir in sliced almonds and mixed berries.\nCover and refrigerate overnight.\nIn the morning, stir and enjoy.",
     "image": "/images/recipes/breakfast/overnight-oats-almonds.jpg"
   },
   {
@@ -1719,7 +1119,6 @@
     "category": "Lunch",
     "servings": 2,
     "calories_per_portion": 320,
-    "nutrition": {
       "protein": "12g",
       "carbs": "45g",
       "fat": "10g",
@@ -1727,8 +1126,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "6g",
       "fiber": "10g",
-      "sugar": "5g"
-    },
+      "sugar": "5g",
     "total_time": "15 minutes",
     "cuisine": "American",
     "gluten_free": false,
@@ -1738,20 +1136,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 can chickpeas, rinsed and drained",
-      "2 tbsp vegan mayo",
-      "1/4 cup diced celery",
-      "1/4 cup diced red onion",
-      "1 tbsp lemon juice",
-      "Salt and pepper to taste",
-      "4 slices whole grain bread"
-    ],
-    "instructions": [
-      "In a bowl, mash chickpeas with a fork.",
-      "Mix in vegan mayo, celery, red onion, lemon juice, salt, and pepper.",
-      "Spread the chickpea mixture on whole grain bread and serve."
-    ],
+    "ingredients": "1 can chickpeas, rinsed and drained\n2 tbsp vegan mayo\n1/4 cup diced celery\n1/4 cup diced red onion\n1 tbsp lemon juice\nSalt and pepper to taste\n4 slices whole grain bread",
+    "instructions": "In a bowl, mash chickpeas with a fork.\nMix in vegan mayo, celery, red onion, lemon juice, salt, and pepper.\nSpread the chickpea mixture on whole grain bread and serve.",
     "image": "/images/recipes/lunch/chickpea-sandwich.jpg"
   },
   {
@@ -1760,7 +1146,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 350,
-    "nutrition": {
       "protein": "20g",
       "carbs": "45g",
       "fat": "10g",
@@ -1768,8 +1153,7 @@
       "Polyunsaturated Fat": "1g",
       "Monounsaturated Fat": "7g",
       "fiber": "8g",
-      "sugar": "6g"
-    },
+      "sugar": "6g",
     "total_time": "45 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -1779,21 +1163,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "2 large bell peppers, halved and seeds removed",
-      "1 cup cooked brown rice",
-      "1 can black beans, rinsed and drained",
-      "1 cup corn kernels",
-      "1 tsp cumin",
-      "Salt and pepper to taste",
-      "1/4 cup fresh cilantro, chopped"
-    ],
-    "instructions": [
-      "Preheat oven to 375°F (190°C).",
-      "In a bowl, mix brown rice, black beans, corn, cumin, salt, and pepper.",
-      "Stuff the mixture into halved bell peppers.",
-      "Place peppers in a baking dish and cover with foil. Bake for 30 minutes."
-    ],
+    "ingredients": "2 large bell peppers, halved and seeds removed\n1 cup cooked brown rice\n1 can black beans, rinsed and drained\n1 cup corn kernels\n1 tsp cumin\nSalt and pepper to taste\n1/4 cup fresh cilantro, chopped",
+    "instructions": "Preheat oven to 375°F (190°C).\nIn a bowl, mix brown rice, black beans, corn, cumin, salt, and pepper.\nStuff the mixture into halved bell peppers.\nPlace peppers in a baking dish and cover with foil. Bake for 30 minutes.",
     "image": "/images/recipes/dinner/stuffed-peppers-rice.jpg"
   },
   {
@@ -1802,7 +1173,6 @@
     "category": "Dinner",
     "servings": 2,
     "calories_per_portion": 220,
-    "nutrition": {
       "protein": "8g",
       "carbs": "14g",
       "fat": "10g",
@@ -1810,8 +1180,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "6g",
       "fiber": "6g",
-      "sugar": "4g"
-    },
+      "sugar": "4g",
     "total_time": "20 minutes",
     "cuisine": "Asian",
     "gluten_free": true,
@@ -1821,20 +1190,8 @@
     "paleo": true,
     "low_carb": true,
     "high_protein": false,
-    "ingredients": [
-      "1 head cauliflower, grated into rice-sized pieces",
-      "1 cup mixed vegetables (carrots, peas, bell peppers)",
-      "2 cloves garlic, minced",
-      "2 tbsp soy sauce or tamari",
-      "2 tbsp sesame oil",
-      "1 green onion, sliced"
-    ],
-    "instructions": [
-      "Heat sesame oil in a pan over medium heat.",
-      "Add garlic and mixed vegetables, sauté until tender.",
-      "Stir in cauliflower rice and soy sauce, cooking for another 5-7 minutes.",
-      "Garnish with green onions and serve."
-    ],
+    "ingredients": "1 head cauliflower, grated into rice-sized pieces\n1 cup mixed vegetables (carrots, peas, bell peppers)\n2 cloves garlic, minced\n2 tbsp soy sauce or tamari\n2 tbsp sesame oil\n1 green onion, sliced",
+    "instructions": "Heat sesame oil in a pan over medium heat.\nAdd garlic and mixed vegetables, sauté until tender.\nStir in cauliflower rice and soy sauce, cooking for another 5-7 minutes.\nGarnish with green onions and serve.",
     "image": "/images/recipes/dinner/cauliflower-fried-rice.jpg"
   },
 
@@ -1844,7 +1201,6 @@
     "category": "Salad",
     "servings": 2,
     "calories_per_portion": 200,
-    "nutrition": {
       "protein": "4g",
       "carbs": "20g",
       "fat": "12g",
@@ -1852,8 +1208,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "9g",
       "fiber": "3g",
-      "sugar": "10g"
-    },
+      "sugar": "10g",
     "total_time": "10 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -1863,18 +1218,8 @@
     "paleo": true,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "4 cups mixed greens",
-      "2 ripe peaches, sliced",
-      "1/4 cup walnuts, chopped",
-      "2 tbsp balsamic vinaigrette",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "In a large bowl, combine mixed greens, peach slices, and walnuts.",
-      "Drizzle with balsamic vinaigrette and toss gently.",
-      "Season with salt and pepper, then serve."
-    ],
+    "ingredients": "4 cups mixed greens\n2 ripe peaches, sliced\n1/4 cup walnuts, chopped\n2 tbsp balsamic vinaigrette\nSalt and pepper to taste",
+    "instructions": "In a large bowl, combine mixed greens, peach slices, and walnuts.\nDrizzle with balsamic vinaigrette and toss gently.\nSeason with salt and pepper, then serve.",
     "image": "/images/recipes/salads/peach-walnut-salad.jpg"
   },
   {
@@ -1883,7 +1228,6 @@
     "category": "Snack",
     "servings": 2,
     "calories_per_portion": 180,
-    "nutrition": {
       "protein": "6g",
       "carbs": "30g",
       "fat": "6g",
@@ -1891,8 +1235,7 @@
       "Polyunsaturated Fat": "1g",
       "Monounsaturated Fat": "4g",
       "fiber": "4g",
-      "sugar": "5g"
-    },
+      "sugar": "5g",
     "total_time": "5 minutes",
     "cuisine": "American",
     "gluten_free": false,
@@ -1902,18 +1245,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "2 slices whole grain bread",
-      "4 tbsp almond butter",
-      "1 banana, sliced",
-      "1 tbsp honey (optional)",
-      "Cinnamon for sprinkling"
-    ],
-    "instructions": [
-      "Toast the bread slices.",
-      "Spread almond butter evenly on each slice.",
-      "Top with banana slices, drizzle with honey, and sprinkle with cinnamon."
-    ],
+    "ingredients": "2 slices whole grain bread\n4 tbsp almond butter\n1 banana, sliced\n1 tbsp honey (optional)\nCinnamon for sprinkling",
+    "instructions": "Toast the bread slices.\nSpread almond butter evenly on each slice.\nTop with banana slices, drizzle with honey, and sprinkle with cinnamon.",
     "image": "/images/recipes/snacks/peanut-butter-banana-toast.webp"
   },
   {
@@ -1922,7 +1255,6 @@
     "category": "Snack",
     "servings": 2,
     "calories_per_portion": 220,
-    "nutrition": {
       "protein": "10g",
       "carbs": "25g",
       "fat": "9g",
@@ -1930,8 +1262,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "4g",
       "fiber": "2g",
-      "sugar": "10g"
-    },
+      "sugar": "10g",
     "total_time": "5 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -1941,17 +1272,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "2 cups Greek yogurt",
-      "2 tbsp honey",
-      "1/4 cup mixed nuts, chopped",
-      "1/2 tsp cinnamon"
-    ],
-    "instructions": [
-      "In a bowl, layer Greek yogurt.",
-      "Drizzle with honey and top with mixed nuts and cinnamon.",
-      "Serve immediately."
-    ],
+    "ingredients": "2 cups Greek yogurt\n2 tbsp honey\n1/4 cup mixed nuts, chopped\n1/2 tsp cinnamon",
+    "instructions": "In a bowl, layer Greek yogurt.\nDrizzle with honey and top with mixed nuts and cinnamon.\nServe immediately.",
     "image": "/images/recipes/snacks/Greek_Yogurt_With_Honey.jpg"
   },
   {
@@ -1960,7 +1282,6 @@
     "category": "Breakfast",
     "servings": 2,
     "calories_per_portion": 290,
-    "nutrition": {
       "protein": "12g",
       "carbs": "30g",
       "fat": "14g",
@@ -1968,8 +1289,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "8g",
       "fiber": "5g",
-      "sugar": "1g"
-    },
+      "sugar": "1g",
     "total_time": "15 minutes",
     "cuisine": "American",
     "gluten_free": true,
@@ -1979,20 +1299,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "1 cup rolled oats",
-      "2 cups water or vegetable broth",
-      "1 cup fresh spinach",
-      "2 eggs",
-      "1 tbsp olive oil",
-      "Salt and pepper to taste"
-    ],
-    "instructions": [
-      "In a pot, bring water or broth to a boil, then add oats. Cook for about 5 minutes.",
-      "In a skillet, heat olive oil and sauté spinach until wilted. Season with salt and pepper.",
-      "Fry eggs to your preference.",
-      "Serve oatmeal topped with spinach and a fried egg."
-    ],
+    "ingredients": "1 cup rolled oats\n2 cups water or vegetable broth\n1 cup fresh spinach\n2 eggs\n1 tbsp olive oil\nSalt and pepper to taste",
+    "instructions": "In a pot, bring water or broth to a boil, then add oats. Cook for about 5 minutes.\nIn a skillet, heat olive oil and sauté spinach until wilted. Season with salt and pepper.\nFry eggs to your preference.\nServe oatmeal topped with spinach and a fried egg.",
     "image": "/images/recipes/breakfast/savory-oatmeal-with-spinach.webp"
   },
   {
@@ -2001,7 +1309,6 @@
     "category": "Salad",
     "servings": 2,
     "calories_per_portion": 350,
-    "nutrition": {
       "protein": "12g",
       "carbs": "60g",
       "fat": "8g",
@@ -2009,8 +1316,7 @@
       "Polyunsaturated Fat": "2g",
       "Monounsaturated Fat": "5g",
       "fiber": "15g",
-      "sugar": "8g"
-    },
+      "sugar": "8g",
     "total_time": "40 minutes",
     "cuisine": "Mediterranean",
     "gluten_free": true,
@@ -2020,21 +1326,8 @@
     "paleo": false,
     "low_carb": false,
     "high_protein": false,
-    "ingredients": [
-      "1 large sweet potato, diced",
-      "1 can chickpeas, rinsed and drained",
-      "2 cups mixed greens",
-      "2 tbsp olive oil",
-      "1 tbsp balsamic vinegar",
-      "Salt and pepper to taste",
-      "1/4 tsp paprika"
-    ],
-    "instructions": [
-      "Preheat oven to 400°F (200°C).",
-      "Toss sweet potato with olive oil, salt, pepper, and paprika. Spread on a baking sheet and roast for 25 minutes.",
-      "In a large bowl, combine roasted sweet potato, chickpeas, and mixed greens.",
-      "Drizzle with balsamic vinegar before serving."
-    ],
+    "ingredients": "1 large sweet potato, diced\n1 can chickpeas, rinsed and drained\n2 cups mixed greens\n2 tbsp olive oil\n1 tbsp balsamic vinegar\nSalt and pepper to taste\n1/4 tsp paprika",
+    "instructions": "Preheat oven to 400°F (200°C).\nToss sweet potato with olive oil, salt, pepper, and paprika. Spread on a baking sheet and roast for 25 minutes.\nIn a large bowl, combine roasted sweet potato, chickpeas, and mixed greens.\nDrizzle with balsamic vinegar before serving.",
     "image": "/images/recipes/salads/sweet-potato-salad.jpg"
   },
   {
@@ -2043,7 +1336,6 @@
     "category": "Breakfast",
     "servings": 2,
     "calories_per_portion": 350,
-    "nutrition": {
       "protein": "20g",
       "carbs": "30g",
       "fat": "18g",
@@ -2051,8 +1343,7 @@
       "Polyunsaturated Fat": "3g",
       "Monounsaturated Fat": "10g",
       "fiber": "8g",
-      "sugar": "2g"
-    },
+      "sugar": "2g",
     "total_time": "10 minutes",
     "cuisine": "American",
     "gluten_free": false,
@@ -2062,22 +1353,9 @@
     "paleo": true,
     "low_carb": false,
     "high_protein": true,
-    "ingredients": [
-      "4 large eggs",
-      "1 avocado, mashed",
-      "2 whole wheat tortillas",
-      "1/4 cup salsa",
-      "Salt and pepper to taste",
-      "1 tbsp olive oil"
-    ],
-    "instructions": [
-      "In a skillet, heat olive oil over medium heat and scramble the eggs. Season with salt and pepper.",
-      "Warm the tortillas in another skillet or microwave.",
-      "Spread mashed avocado on each tortilla, add scrambled eggs, and top with salsa.",
-      "Wrap tightly and serve."
-    ],
+    "ingredients": "4 large eggs\n1 avocado, mashed\n2 whole wheat tortillas\n1/4 cup salsa\nSalt and pepper to taste\n1 tbsp olive oil",
+    "instructions": "In a skillet, heat olive oil over medium heat and scramble the eggs. Season with salt and pepper.\nWarm the tortillas in another skillet or microwave.\nSpread mashed avocado on each tortilla, add scrambled eggs, and top with salsa.\nWrap tightly and serve.",
     "image": "/images/recipes/breakfast/egg-avo-wrap.jpeg"
   }
   
 ], "saved": []}
-

@@ -1,25 +1,36 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { supabase } from '../supabase/supabase-client'  
+// import { supabase } from '../supabase/supabase-client'  
+import { useAuth } from '../context/AuthContext'
+
+import { useNavigate } from 'react-router-dom';
 
 export function Login() {
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
+  const { login } = useAuth()
+
+  const navigate = useNavigate()
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     console.log('Logging in', email, password)
 
-    const {data, error} = await supabase.auth.signInWithPassword({ email, password });
-
-    if (!error && data) {
-      console.log(data)
-    }
-    
+    //has to be await!!
+    const {data, error} = await login(email, password);
+  
+    // const {error} = await supabase.auth.signInWithPassword({ email, password })
+  
+    //zde by se to melo lepe osetrit, melo by zobrazit chybu proc se nepodarilo prihlasit
     if (error) {
       console.log(error)
+      return
     }
+    //after login navigate to home page
+    navigate('/')
+
   }
 
   return (
@@ -81,7 +92,7 @@ export function Login() {
                   id="password"
                   name="password"
                   type="password"
-                  autocomplete="current-password"
+                  autoComplete="current-password"
                   required
                   value={password}
                   onChange={e => setPassword(e.target.value)}
@@ -102,13 +113,9 @@ export function Login() {
 
           <p className="mt-10 text-center text-sm/6 text-gray-500">
             Not a member?
-            <Link to="/signup">
-            <a
-              href="#"
-              className="font-semibold text-gray-900 hover:text-gray-400"
+            <Link to="/signup" className="font-semibold text-gray-900 hover:text-gray-400"
             >
               Sign up here
-            </a>
             </Link>
           </p>
         </div>

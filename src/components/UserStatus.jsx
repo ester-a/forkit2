@@ -4,13 +4,14 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 export function UserStatus() {
-  const { user, isAuth } = useAuth();
+  const { user, isAuth, logout } = useAuth();
   return (
     <div>
       {isAuth ? (
         <>
-          <p className="text-gray-700 inline-block mr-1">{user.firstName}</p>
-          <Link to="/home" className="text-gray-700 hover:text-gray-400">
+          {/* zde by bylo lepsi pouzit useNavigation */}
+          <p className="text-gray-700 inline-block mr-1">{user.user_metadata.firstName}</p>
+          <Link onClick={logout} to="/" className="text-gray-700 hover:text-gray-400"> 
             <CiLogout className="text-lg inline-block mr-1" /> Log out
           </Link>
         </>
