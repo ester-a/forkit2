@@ -3,7 +3,7 @@ import { Footer } from "./components/Footer";
 import Home from "./pages/Home";
 import ExploreRecipes from "./pages/ExploreRecipes";
 import RecipeDetail from "./pages/RecipeDetail";
-import SavedRecipes from "./pages/SavedRecipes";
+import Favorites from "./pages/Favorites";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
@@ -33,7 +33,7 @@ export function App() {
               <Route index element={<Home />} />
               <Route path="explore" element={<ExploreRecipes />} />
               <Route path="recipe/:recipeId" element={<RecipeDetail />} />
-              <Route path="saved" element={<SavedRecipes />} />
+              <Route path="favorites" element={<Favorites />} />
               <Route path="login" element={<Login />} />
               <Route path="signup" element={<Register />} />
             </Route>

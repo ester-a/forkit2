@@ -1,102 +1,218 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { supabase } from "../supabase/supabase-client";
 
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 // import Slider from "react-slick"; // Import Slider from react-slick
 
-
-export function Recipes({ showAll = false }) {
+export function Recipes({ showAll = false, showFavorites = false }) {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [favorites, setFavorites] = useState([]);
+  const [userId, setUserId] = useState(null);
+
+  // useEffect(() => {
+  //   // Fetch recipes from the JSON file
+  //   async function fetchRecipes() {
+  //     try {
+  //       const response = await fetch("http://localhost:3000/recipes");
+  //       const data = await response.json();
+  //       console.log(data)
+  //       setRecipes(data);
+  //       setLoading(false);
+  //     } catch (error) {
+  //       console.error("Error fetching recipes:", error);
+  //       setLoading(false);
+  //     }
+  //   }
+  //   fetchRecipes();
+  // }, []);
+
+  // Fetch recipes from the supabase
 
   useEffect(() => {
-    // Fetch recipes from the JSON file
-    async function fetchRecipes() {
-      try {
-        const response = await fetch("http://localhost:3000/recipes");
-        const data = await response.json();
-        console.log(data)
-        setRecipes(data);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching recipes:", error);
-        setLoading(false);
-      }
+
+    async function fetchUserId() {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      if (user) setUserId(user.id);
     }
-    fetchRecipes();
-  }, []);
 
-  if (loading) return <p>Loading recipes...</p>;
+    fetchUserId();
 
-    // If `showAll` is true, render all recipes as a single list
-    if (showAll) {
-        return (
-          <div className="max-w-[1280px] mx-auto p-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
-            {recipes.map((recipe) => (
+    async function getRecipes() {
+      const { data, error } = await supabase.from("recipes").select();
+      if (error) {
+        console.error("Error fetching recipes:", error);
+      } else {
+        setRecipes(data);
+      }
+      setLoading(false);
+    }
+
+    async function getFavorites() {
+      if (!userId) return; 
+      const { data, error } = await supabase.from("favorites").select().eq("user_id", userId);
+      console.log(userId)
+
+      if (error) {
+        console.error("Error fetching recipes:", error);
+      } else {
+        setFavorites(data.map((x) => x.recipe_id)); //return array only with recipe_id
+      }
+      setLoading(false);
+    }
+    getRecipes();
+    getFavorites();
+  }, [userId]);
+
+  if (loading) {
+    return (
+      <>
+        <div className="max-w-[1280px] mx-auto p-5 pt-11">
+          <p>Loading recipes...</p>;
+        </div>
+      </>
+    );
+  }
+
+  //Recipe list for favorites
+
+  let displayedRecipes;
+  if (showFavorites) {
+    displayedRecipes = recipes.filter((recipe) =>
+      favorites.includes(recipe.recipes__id)
+    );
+
+    if (displayedRecipes.length === 0) {
+      return (
+        <div className="max-w-[1280px] mx-auto p-5 pt-11">
+          <h1 className="text-s lg:text-2xl font-bold mt-11 pt-11">Your Favorite Recipes</h1>
+          <p className="text-s lg:text-lg mt-5 pb-5 text-gray-500">
+            Save recipes you love so that you can cook them again, and again, and again...
+          </p>
+          <Link to="/explore" className="text-gray-700 hover:text-gray-400">
+            <button className="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-500">
+              Explore Recipes
+            </button>
+          </Link>
+        </div>
+      );
+    }
+
+    return (
+      <>
+        <div className="max-w-[1280px] mx-auto p-5 pt-11">
+          <div className="flex gap-3">
+            <h2 className="text-lg lg:text-2xl text-black mt-10 pt-10 pb-5">
+              {showFavorites ? "Favorite Recipes" : "Your database is empty"}
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+            {displayedRecipes.map((recipe) => (
               <div
-                key={recipe.id}
+                key={recipe.recipes__id}
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
-                <Link to={`/recipe/${recipe.id}`}>
-                <img
-                  src={recipe.image}
-                  alt={recipe.name}
-                  className="w-full h-32 object-cover"
-                />
-                <div className="p-4">
-                  <h3 className="text-md font-medium text-gray-800 mb-2">
-                    {recipe.name}
-                  </h3>
-                  <p className="text-sm text-gray-600">⏱ {recipe.total_time}</p>
-                </div>
-                </Link>
-              </div>
-            ))}
-          </div>
-        );
-      }
-    
-      // Default: Group recipes by category (original behavior)
-      const categories = ["Breakfast", "Lunch", "Dinner", "Snack", "Salad"];
-      const recipesByCategory = categories.reduce((acc, category) => {
-        acc[category] = recipes.filter((recipe) => recipe.category === category);
-        return acc;
-      }, {});
-
-  return (
-    <>
-   <div className="max-w-[1280px] mx-auto p-5">
-        {categories.map((category) => (
-          <div key={category} className="mb-8">
-            <h2 className="text-xl text-gray-800 mb-4">
-              {category}
-            </h2>
-            <div className="flex gap-4 overflow-x-auto">
-              {recipesByCategory[category].map((recipe) => (
-                <div
-                  key={recipe.id}
-                  className="min-w-[200px] max-w-[200px] bg-white rounded-lg shadow-md overflow-hidden"
-                >
-                    <Link to={`/recipe/${recipe.id}`}>
+                <Link to={`/recipe/${recipe.recipes__id}`}>
                   <img
-                    src={recipe.image}
-                    alt={recipe.name}
+                    src={recipe.recipes__image}
+                    alt={recipe.recipes__name}
                     className="w-full h-32 object-cover"
                   />
                   <div className="p-4">
                     <h3 className="text-md font-medium text-gray-800 mb-2">
-                      {recipe.name}
+                      {recipe.recipes__name}
                     </h3>
                     <p className="text-sm text-gray-600">
-                      ⏱ {recipe.total_time}
+                      ⏱ {recipe.recipes__total_time}
                     </p>
                   </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
+    );
+  }
+
+  //Recipe list for Explore
+
+  // If `showAll` is true, render all recipes as a single list
+  if (showAll) {
+    return (
+      <div className="max-w-[1280px] mx-auto p-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+        {recipes.map((recipe) => (
+          <div
+            key={recipe.recipes__id}
+            className="bg-white rounded-lg shadow-md overflow-hidden"
+          >
+            <Link to={`/recipe/${recipe.recipes__id}`}>
+              <img
+                src={recipe.recipes__image}
+                alt={recipe.recipes__name}
+                className="w-full h-32 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-md font-medium text-gray-800 mb-2">
+                  {recipe.recipes__name}
+                </h3>
+                <p className="text-sm text-gray-600">
+                  ⏱ {recipe.recipes__total_time}
+                </p>
+              </div>
+            </Link>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
+  //Recipe list for main page
+
+  // Default: Group recipes by category (original behavior)
+  const categories = ["Breakfast", "Lunch", "Dinner", "Snack", "Salad"];
+  const recipesByCategory = categories.reduce((acc, category) => {
+    acc[category] = recipes.filter(
+      (recipe) => recipe.recipes__category === category
+    );
+    return acc;
+  }, {});
+
+  return (
+    <>
+      <div className="max-w-[1280px] mx-auto p-5">
+        {categories.map((category) => (
+          <div key={category} className="mb-8">
+            <h2 className="text-xl text-gray-800 mb-4">{category}</h2>
+            <div className="flex gap-4 overflow-x-auto">
+              {recipesByCategory[category].map((recipe) => (
+                <div
+                  key={recipe.recipes__id}
+                  className="min-w-[200px] max-w-[200px] bg-white rounded-lg shadow-md overflow-hidden"
+                >
+                  <Link to={`/recipe/${recipe.recipes__id}`}>
+                    <img
+                      src={recipe.recipes__image}
+                      alt={recipe.recipes__name}
+                      className="w-full h-32 object-cover"
+                    />
+                    <div className="p-4">
+                      <h3 className="text-md font-medium text-gray-800 mb-2">
+                        {recipe.recipes__name}
+                      </h3>
+                      <p className="text-sm text-gray-600">
+                        ⏱ {recipe.recipes__total_time}
+                      </p>
+                    </div>
                   </Link>
                 </div>
               ))}
             </div>
-            
           </div>
         ))}
       </div>
@@ -105,6 +221,3 @@ export function Recipes({ showAll = false }) {
 }
 
 export default Recipes;
-
-
-

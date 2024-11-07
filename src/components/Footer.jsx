@@ -1,6 +1,6 @@
 import { TfiHome } from "react-icons/tfi";
 import { GoSearch } from "react-icons/go";
-import { CiSaveDown2 } from "react-icons/ci";
+import { MdFavoriteBorder } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export function Footer() {
@@ -15,9 +15,9 @@ export function Footer() {
             <GoSearch className="text-lg" />
           <span className="text-sm">Explore</span>
         </Link>
-        <Link to="/saved" className="flex flex-col items-center text-gray-700 hover:text-gray-400">
-            <CiSaveDown2 className="text-lg" />
-            <span className="text-sm">Saved</span>
+        <Link to="/favorites" className="flex flex-col items-center text-gray-700 hover:text-gray-400">
+            <MdFavoriteBorder className="text-lg" />
+            <span className="text-sm">Favorites</span>
         </Link>
       </div>
     </>

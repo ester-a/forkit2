@@ -1,6 +1,6 @@
 import { TfiHome } from "react-icons/tfi";
 import { GoSearch } from "react-icons/go";
-import { CiSaveDown2 } from "react-icons/ci";
+import { MdFavoriteBorder } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
 import { UserStatus } from './UserStatus'
 
@@ -38,13 +38,13 @@ export function Navbar() {
                 Explore
               </Link>
               <Link
-                to="/saved"
+                to="/favorites"
                 className={`flex items-center gap-2 ${
-                    location.pathname === "/saved" ? "text-gray-400" : "text-gray-700 hover:text-gray-400"
+                    location.pathname === "/favorites" ? "text-gray-400" : "text-gray-700 hover:text-gray-400"
                   }`}
               >
-                <CiSaveDown2 className="text-lg" />
-                Saved
+                <MdFavoriteBorder className="text-lg" />
+                Favorites
               </Link>
             </nav>
             <UserStatus/>
