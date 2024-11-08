@@ -2,45 +2,27 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { supabase } from "../supabase/supabase-client";
 
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import Slider from "react-slick"; // Import Slider from react-slick
+// // import "slick-carousel/slick/slick.css";
+// // import "slick-carousel/slick/slick-theme.css";
+// // import Slider from "react-slick"; // Import Slider from react-slick
 
-export function Recipes({ showAll = false, showFavorites = false }) {
+export function Recipes({ showAll = false, query, showFavorites = false }) {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
   const [favorites, setFavorites] = useState([]);
   const [userId, setUserId] = useState(null);
-
-  // useEffect(() => {
-  //   // Fetch recipes from the JSON file
-  //   async function fetchRecipes() {
-  //     try {
-  //       const response = await fetch("http://localhost:3000/recipes");
-  //       const data = await response.json();
-  //       console.log(data)
-  //       setRecipes(data);
-  //       setLoading(false);
-  //     } catch (error) {
-  //       console.error("Error fetching recipes:", error);
-  //       setLoading(false);
-  //     }
-  //   }
-  //   fetchRecipes();
-  // }, []);
-
-  // Fetch recipes from the supabase
+  const [filteredRecipes, setFilteredRecipes] = useState([]);
 
   useEffect(() => {
 
-    async function fetchUserId() {
+    async function getUserId() {
       const {
         data: { user },
       } = await supabase.auth.getUser();
       if (user) setUserId(user.id);
     }
 
-    fetchUserId();
+    getUserId();
 
     async function getRecipes() {
       const { data, error } = await supabase.from("recipes").select();
@@ -68,6 +50,19 @@ export function Recipes({ showAll = false, showFavorites = false }) {
     getFavorites();
   }, [userId]);
 
+  useEffect(() => {
+    // Filter recipes by name or ingredients based on searchQuery
+    if (query) {
+      const filtered = recipes.filter(recipe =>
+          recipe.recipes__name.toLowerCase().includes(query.toLowerCase()) ||
+          recipe.recipes__ingredients.toLowerCase().includes(query.toLowerCase())
+      );
+      setFilteredRecipes(filtered);
+    } else {
+      setFilteredRecipes(recipes); // Show all if no query
+    }
+  }, [query, recipes]);
+
   if (loading) {
     return (
       <>
@@ -78,7 +73,8 @@ export function Recipes({ showAll = false, showFavorites = false }) {
     );
   }
 
-  //Recipe list for favorites
+ 
+  // Recipe list for favorites
 
   let displayedRecipes;
   if (showFavorites) {
@@ -140,11 +136,62 @@ export function Recipes({ showAll = false, showFavorites = false }) {
     );
   }
 
+  if (query) {
+    recipes.filter((recipe) =>
+      filteredRecipes.includes(recipe.recipes__id)
+    );
+
+    if (filteredRecipes.length === 0) {
+      return (
+                <div className="max-w-[1280px] mx-auto p-5 pt-11">
+                  <h1 className="text-center"> No tasty results. Let's discover something else!.</h1>
+                  <Link to="/explore">
+                    <button className="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-gray-500">
+                      Explore Recipes
+                    </button>
+                  </Link>
+                </div>
+              );
+    }
+
+    return (
+      <>
+        <div className="max-w-[1280px] mx-auto p-5 pt-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
+            {filteredRecipes.map((recipe) => (
+              <div
+                key={recipe.recipes__id}
+                className="bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <Link to={`/recipe/${recipe.recipes__id}`}>
+                  <img
+                    src={recipe.recipes__image}
+                    alt={recipe.recipes__name}
+                    className="w-full h-32 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-md font-medium text-gray-800 mb-2">
+                      {recipe.recipes__name}
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      ⏱ {recipe.recipes__total_time}
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </>
+    );
+  }
+
   //Recipe list for Explore
 
   // If `showAll` is true, render all recipes as a single list
   if (showAll) {
     return (
+      <>
       <div className="max-w-[1280px] mx-auto p-5 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
         {recipes.map((recipe) => (
           <div
@@ -169,6 +216,7 @@ export function Recipes({ showAll = false, showFavorites = false }) {
           </div>
         ))}
       </div>
+    </>
     );
   }
 
@@ -182,7 +230,7 @@ export function Recipes({ showAll = false, showFavorites = false }) {
     );
     return acc;
   }, {});
-
+ 
   return (
     <>
       <div className="max-w-[1280px] mx-auto p-5">
@@ -219,5 +267,3 @@ export function Recipes({ showAll = false, showFavorites = false }) {
     </>
   );
 }
-
-export default Recipes;

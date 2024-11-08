@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export function Footer() {
   return (
     <>
-      <div className="fixed bottom-0 left-0 w-full bg-[#fcfcfc] border-t border-gray-200 p-2 md:hidden flex justify-around">
+      <div className="fixed bottom-0 left-0 w-full bg-[#fcfcfc] border-t border-gray-200 p-2 md:hidden flex justify-around mt-12">
         <Link to="/" className="flex flex-col items-center text-gray-700 hover:text-gray-400">
             <TfiHome className="text-lg" />
             <span className="text-sm">Home</span>
