@@ -2,12 +2,12 @@ import { TfiHome } from "react-icons/tfi";
 import { GoSearch } from "react-icons/go";
 import { MdFavoriteBorder } from "react-icons/md";
 import { Link, useLocation } from "react-router-dom";
-import { UserStatus } from './UserStatus'
+import { UserStatus } from "./UserStatus";
 
 export function Navbar() {
-    const location = useLocation(); // useLocation is used to get the current path.
-                                     //For each Link, we check if location.pathname matches the link’s path.
-                                    // If it matches, we apply text-gray-400 to simulate the "active" style (the same color as hover:text-gray-400).
+  const location = useLocation(); // useLocation is used to get the current path.
+  //For each Link, we check if location.pathname matches the link’s path.
+  // If it matches, we apply text-gray-400 to simulate the "active" style (the same color as hover:text-gray-400).
 
   return (
     <>
@@ -22,8 +22,10 @@ export function Navbar() {
               <Link
                 to="/"
                 className={`flex items-center gap-2 ${
-                    location.pathname === "/" ? "text-gray-400 hover:text-gray-700" : "text-gray-700 hover:text-gray-400"
-                  }`}
+                  location.pathname === "/"
+                    ? "text-gray-400 hover:text-gray-700"
+                    : "text-gray-700 hover:text-gray-400"
+                }`}
               >
                 <TfiHome className="text-lg" />
                 Home
@@ -31,8 +33,10 @@ export function Navbar() {
               <Link
                 to="/explore"
                 className={`flex items-center gap-2 ${
-                    location.pathname === "/explore" ? "text-gray-400" : "text-gray-700 hover:text-gray-400"
-                  }`}
+                  location.pathname === "/explore"
+                    ? "text-gray-400"
+                    : "text-gray-700 hover:text-gray-400"
+                }`}
               >
                 <GoSearch className="text-lg" />
                 Explore
@@ -40,14 +44,16 @@ export function Navbar() {
               <Link
                 to="/favorites"
                 className={`flex items-center gap-2 ${
-                    location.pathname === "/favorites" ? "text-gray-400" : "text-gray-700 hover:text-gray-400"
-                  }`}
+                  location.pathname === "/favorites"
+                    ? "text-gray-400"
+                    : "text-gray-700 hover:text-gray-400"
+                }`}
               >
                 <MdFavoriteBorder className="text-lg" />
                 Favorites
               </Link>
             </nav>
-            <UserStatus/>
+            <UserStatus />
           </div>
         </div>
       </header>
@@ -56,4 +62,3 @@ export function Navbar() {
 }
 
 export default Navbar;
-

@@ -1,37 +1,46 @@
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
-// import { supabase } from '../supabase/supabase-client'  
-import { useAuth } from '../context/AuthContext'
-
-import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useAuth } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState(null); // For error/success messages
 
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-
-  const { login } = useAuth()
-
-  const navigate = useNavigate()
+  const { login } = useAuth();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
-    console.log('Logging in', email, password)
+    e.preventDefault();
+    setMessage(null);
 
-    //has to be await!!
-    const {data, error} = await login(email, password);
-  
-    // const {error} = await supabase.auth.signInWithPassword({ email, password })
-  
-    //zde by se to melo lepe osetrit, melo by zobrazit chybu proc se nepodarilo prihlasit
-    if (error) {
-      console.log(error)
-      return
+    // Check for empty fields
+    if (!email || !password) {
+      setMessage("Please enter both email and password.");
+      return;
     }
-    //after login navigate to home page
-    navigate('/')
 
-  }
+    try {
+      const { data, error } = await login(email, password);
+
+      // Handle error in login
+      if (error) {
+        setMessage("Login failed. Incorrect password or e-mail.");
+        console.error("Login error:", error);
+        return;
+      }
+
+      // Success: Clear fields and navigate to the home page
+      setMessage("Login successful! Redirecting...");
+      setEmail("");
+      setPassword("");
+      navigate("/");
+    } catch (err) {
+      setMessage("An unexpected error occurred. Please try again later.");
+      console.error("Unexpected error:", err);
+    }
+  };
 
   return (
     <>
@@ -42,18 +51,17 @@ export function Login() {
             src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
             alt="Your Company"
           />
-          <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
+          <h2 className="mt-10 text-center text-2xl font-bold tracking-tight text-gray-900">
             Sign in to your account
           </h2>
         </div>
 
+        {message && <p className="text-center text-red-500 mt-4">{message}</p>}
+
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form onSubmit={handleSubmit} className="space-y-6" action="#" method="POST">
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm/6 font-medium text-gray-900"
-              >
+              <label htmlFor="email" className="block text-sm font-medium text-gray-900">
                 Email address
               </label>
               <div className="mt-2">
@@ -63,26 +71,20 @@ export function Login() {
                   type="email"
                   autoComplete="email"
                   value={email}
-                  onChange={e => setEmail(e.target.value)}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm/6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm"
                 />
               </div>
             </div>
 
             <div>
               <div className="flex items-center justify-between">
-                <label
-                  htmlFor="password"
-                  className="block text-sm/6 font-medium text-gray-900"
-                >
+                <label htmlFor="password" className="block text-sm font-medium text-gray-900">
                   Password
                 </label>
                 <div className="text-sm">
-                  <a
-                    href="#"
-                    className="font-semibold text-gray-900 hover:text-gray-400"
-                  >
+                  <a href="#" className="font-semibold text-gray-900 hover:text-gray-400">
                     Forgot password?
                   </a>
                 </div>
@@ -93,10 +95,10 @@ export function Login() {
                   name="password"
                   type="password"
                   autoComplete="current-password"
-                  required
                   value={password}
-                  onChange={e => setPassword(e.target.value)}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm"
                 />
               </div>
             </div>
@@ -104,17 +106,16 @@ export function Login() {
             <div>
               <button
                 type="submit"
-                className="flex w-full justify-center rounded-md bg-black px-3 py-1.5 text-sm/6 font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                className="flex w-full justify-center rounded-md bg-black px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
               >
                 Sign in
               </button>
             </div>
           </form>
 
-          <p className="mt-10 text-center text-sm/6 text-gray-500">
+          <p className="mt-10 text-center text-sm text-gray-500">
             Not a member?
-            <Link to="/signup" className="font-semibold text-gray-900 hover:text-gray-400"
-            >
+            <Link to="/signup" className="font-semibold text-gray-900 hover:text-gray-400">
               Sign up here
             </Link>
           </p>
@@ -125,3 +126,5 @@ export function Login() {
 }
 
 export default Login;
+
+

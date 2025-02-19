@@ -7,7 +7,6 @@ export function Searchbar({
   handleInputChange,
 
   rightIcon,
-  
 }) {
   return (
     <div className="w-full">

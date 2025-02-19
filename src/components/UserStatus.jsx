@@ -10,8 +10,14 @@ export function UserStatus() {
       {isAuth ? (
         <>
           {/* zde by bylo lepsi pouzit useNavigation */}
-          <p className="text-gray-700 inline-block mr-1">{user.user_metadata.firstName}</p>
-          <Link onClick={logout} to="/" className="text-gray-700 hover:text-gray-400"> 
+          <p className="text-gray-700 inline-block mr-1">
+            {user.user_metadata.firstName}
+          </p>
+          <Link
+            onClick={logout}
+            to="/"
+            className="text-gray-700 hover:text-gray-400"
+          >
             <CiLogout className="text-lg inline-block mr-1" /> Log out
           </Link>
         </>

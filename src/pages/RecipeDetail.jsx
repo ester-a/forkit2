@@ -16,7 +16,9 @@ export function RecipeDetail() {
   // Fetch user ID and email if authenticated
   useEffect(() => {
     async function fetchUserData() {
-      const { data: { user } } = await supabase.auth.getUser();
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
       if (user) {
         setUserId(user.id);
         setUserEmail(user.email); // Storing email of the logged-in user
@@ -185,7 +187,8 @@ export function RecipeDetail() {
             <strong>Servings:</strong> {recipe.recipes__servings}
           </p>
           <p>
-            <strong>Calories per Portion:</strong> {recipe.recipes__calories_per_portion}
+            <strong>Calories per Portion:</strong>{" "}
+            {recipe.recipes__calories_per_portion}
           </p>
 
           {/* Nutritional Information */}
@@ -196,8 +199,12 @@ export function RecipeDetail() {
               <li>Carbohydrates: {recipe.recipes__carbs}</li>
               <li>Fat: {recipe.recipes__fat}</li>
               <li>Saturated Fat: {recipe.recipes__saturated_fat}</li>
-              <li>Monounsaturated Fat: {recipe.recipes__monounsaturated_fat}</li>
-              <li>Polyunsaturated Fat: {recipe.recipes__polyunsaturated_fat}</li>
+              <li>
+                Monounsaturated Fat: {recipe.recipes__monounsaturated_fat}
+              </li>
+              <li>
+                Polyunsaturated Fat: {recipe.recipes__polyunsaturated_fat}
+              </li>
               <li>Fiber: {recipe.recipes__fiber}</li>
               <li>Sugar: {recipe.recipes__sugar}</li>
             </ul>
@@ -245,7 +252,8 @@ export function RecipeDetail() {
             <div key={comment.id} className="border-b py-4">
               <p>{comment.comment}</p>
               <p className="text-sm text-gray-500">
-                {comment.user_email ? `By ${comment.user_email}` : "Anonymous"} - {new Date(comment.created_at).toLocaleString()}
+                {comment.user_email ? `By ${comment.user_email}` : "Anonymous"}{" "}
+                - {new Date(comment.created_at).toLocaleString()}
               </p>
             </div>
           ))
