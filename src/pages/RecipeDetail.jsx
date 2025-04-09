@@ -21,7 +21,7 @@ export function RecipeDetail() {
       } = await supabase.auth.getUser();
       if (user) {
         setUserId(user.id);
-        setUserEmail(user.email); // Storing email of the logged-in user
+        setUserEmail(user.email);
       }
     }
     fetchUserData();
@@ -50,11 +50,10 @@ export function RecipeDetail() {
             .single();
 
           if (favoriteError && favoriteError.code !== "PGRST116") {
-            // No favorite entry found
             throw favoriteError;
           }
 
-          setIsFavorite(!!favoriteData); // If favoriteData exists, it's in favorites
+          setIsFavorite(!!favoriteData);
         }
       } catch (error) {
         console.error("Error fetching recipe:", error);
@@ -165,15 +164,6 @@ export function RecipeDetail() {
             alt={recipe.recipes__name}
             className="w-full h-auto rounded aspect-square object-cover object-center"
           />
-          {/* Add to Favorites Button - Visible only if userId exists */}
-          {/* {userId && (
-            <button
-              className="mt-5 px-4 py-2 bg-black text-white rounded hover:bg-gray-500"
-              onClick={handleFavoriteToggle}
-            >
-              {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
-            </button>
-          )} */}
         </div>
         <div className="ml-5 md:w-1/2 md:pl-6">
           <h1 className="text-2xl font-bold">{recipe.recipes__name}</h1>
@@ -222,17 +212,17 @@ export function RecipeDetail() {
               {recipe.recipes__low_carb && <li>Low Carb: ✔️</li>}
             </ul>
           </div>
-
-          {/* Instructions */}
-          {/* <div className="mt-4">
-            <h3 className="font-semibold">Instructions</h3>
-            <ol className="list-decimal list-inside space-y-1">
-              {recipe.recipes__instructions.split("\\n").map((step, index) => (
-                <li key={index}>{step}</li>
-              ))}
-            </ol>
-          </div> */}
         </div>
+      </div>
+
+      {/* Igredients */}
+      <div className="mt-4">
+        <h3 className="font-semibold">Ingredients</h3>
+        <ol className="list-decimal list-inside space-y-1">
+          {recipe.recipes__ingredients.split("\\n").map((ingredient, index) => (
+            <li key={index}>{ingredient}</li>
+          ))}
+        </ol>
       </div>
 
       {/* Instructions */}
@@ -247,13 +237,13 @@ export function RecipeDetail() {
 
       {/* Add to Favorites Button - Visible only if userId exists */}
       {userId && (
-            <button
-              className="mt-5 px-4 py-2 bg-black text-white rounded hover:bg-gray-500"
-              onClick={handleFavoriteToggle}
-            >
-              {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
-            </button>
-          )}
+        <button
+          className="mt-5 px-4 py-2 bg-black text-white rounded hover:bg-gray-500"
+          onClick={handleFavoriteToggle}
+        >
+          {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
+        </button>
+      )}
 
       {/* Comment Section */}
       <div className="mt-6">

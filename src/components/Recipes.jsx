@@ -49,7 +49,7 @@ export function Recipes({
       if (error) {
         console.error("Error fetching recipes:", error);
       } else {
-        setFavorites(data.map((x) => x.recipe_id)); //return array only with recipe_id
+        setFavorites(data.map((x) => x.recipe_id)); 
       }
       setLoading(false);
     }
@@ -106,7 +106,7 @@ export function Recipes({
       filtered = filtered.filter((recipe) => recipe[proteinColumn] === true);
     }
 
-    // M E T H O D  (časový údaj jako string)
+    // M E T H O D  
     if (methodFilter) {
       if (methodFilter === "Under 30 min") {
         filtered = filtered.filter((recipe) => {
@@ -119,11 +119,9 @@ export function Recipes({
           return time <= 15;
         });
       } else if (methodFilter === "5 Ingredients or Less") {
-        // Pokud máš někde recipes__ingredients_count nebo něco takového
         filtered = filtered.filter((recipe) => {
-          const ingredientCount =
-            recipe.recipes__ingredients?.split(",").length;
-          return ingredientCount <= 5;
+          const ingredients = recipe.recipes__ingredients.split("\\n");
+          return ingredients && ingredients.length <= 5;
         });
       }
     }
