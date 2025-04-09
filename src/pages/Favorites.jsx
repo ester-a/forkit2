@@ -39,7 +39,9 @@ export function Favorites() {
   } else {
     return (
       <>
-        <Recipes showFavorites={true} />
+        <div className="pt-24 px-5">
+          <Recipes showFavorites={true} />
+        </div>
       </>
     );
   }
