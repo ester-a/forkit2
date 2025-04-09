@@ -8,6 +8,9 @@ export function Recipes({
   query,
   showFavorites = false,
   dietFilter,
+  courseFilter,
+  proteinFilter,
+  methodFilter,
 }) {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -57,33 +60,91 @@ export function Recipes({
   useEffect(() => {
     // Filter recipes by name or ingredients based on searchQuery
 
-    let filtered = [...recipes]; 
+    let filtered = [...recipes];
 
     if (query) {
       filtered = filtered.filter(
         (recipe) =>
           recipe.recipes__name.toLowerCase().includes(query.toLowerCase()) ||
-          recipe.recipes__ingredients 
+          recipe.recipes__ingredients
             .toLowerCase()
-            .includes(query.toLowerCase()) || 
+            .includes(query.toLowerCase()) ||
           recipe.recipes__category.toLowerCase().includes(query.toLowerCase())
       );
     }
 
-      // Filter by diet type
-      if (dietFilter) {
-           filtered = filtered.filter(
-          (recipe) => recipe.recipes__diet_type === dietFilter
-        );
-      }
+    // D I E T  (booleans)
+    if (dietFilter) {
+      const dietMap = {
+        Vegan: "recipes__vegan",
+        Vegetarian: "recipes__vegetarian",
+        "Gluten Free": "recipes__gluten_fre",
+        "Dairy Free": "recipes__dairy<free",
+        Paleo: "recipes__paleo",
+        "Low Carb": "recipes__low_carb",
+        "High Protein": "recipes__high_protein",
+      };
 
-      if (showFavorites) {
-        filtered = filtered.filter((recipe) => favorites.includes(recipe.recipes__id));
-      }
+      const dietColumn = dietMap[dietFilter];
+      filtered = filtered.filter((recipe) => recipe[dietColumn] === true);
+    }
 
-    
-      setFilteredRecipes(filtered);
-  }, [recipes, favorites, query, dietFilter, showFavorites]);
+    // C O U R S E
+    if (courseFilter) {
+      filtered = filtered.filter(
+        (recipe) => recipe.recipes__category === courseFilter
+      );
+    }
+
+    // P R O T E I N
+    if (proteinFilter) {
+      const proteinMap = {
+        "High Protein": "recipes__high_protein",
+        "Low Carb": "recipes__low_carb",
+      };
+      const proteinColumn = proteinMap[proteinFilter];
+      filtered = filtered.filter((recipe) => recipe[proteinColumn] === true);
+    }
+
+    // M E T H O D  (časový údaj jako string)
+    if (methodFilter) {
+      if (methodFilter === "Under 30 min") {
+        filtered = filtered.filter((recipe) => {
+          const time = parseInt(recipe.recipes__total_time);
+          return time <= 30;
+        });
+      } else if (methodFilter === "Under 15 min") {
+        filtered = filtered.filter((recipe) => {
+          const time = parseInt(recipe.recipes__total_time);
+          return time <= 15;
+        });
+      } else if (methodFilter === "5 Ingredients or Less") {
+        // Pokud máš někde recipes__ingredients_count nebo něco takového
+        filtered = filtered.filter((recipe) => {
+          const ingredientCount =
+            recipe.recipes__ingredients?.split(",").length;
+          return ingredientCount <= 5;
+        });
+      }
+    }
+
+    if (showFavorites) {
+      filtered = filtered.filter((recipe) =>
+        favorites.includes(recipe.recipes__id)
+      );
+    }
+
+    setFilteredRecipes(filtered);
+  }, [
+    recipes,
+    favorites,
+    query,
+    dietFilter,
+    courseFilter,
+    proteinFilter,
+    methodFilter,
+    showFavorites,
+  ]);
 
   if (loading) {
     return (
@@ -123,45 +184,44 @@ export function Recipes({
     );
   }
 
-   // Group by category for main page
-   const categories = ["Breakfast", "Lunch", "Dinner", "Snack", "Salad"];
-   const recipesByCategory = categories.reduce((acc, category) => {
-     acc[category] = recipes.filter((r) => r.recipes__category === category);
-     return acc;
-   }, {});
- 
-   return (
-     <div className="max-w-[1280px] mx-auto p-5">
-       {categories.map((category) => (
-         <div key={category} className="mb-8">
-           <h2 className="text-xl text-gray-800 mb-4">{category}</h2>
-           <div className="flex gap-4 overflow-x-auto">
-             {recipesByCategory[category].map((recipe) => (
-               <div
-                 key={recipe.recipes__id}
-                 className="min-w-[200px] max-w-[200px] bg-white rounded-lg shadow-md overflow-hidden"
-               >
-                 <Link to={`/recipe/${recipe.recipes__id}`}>
-                   <img
-                     src={recipe.recipes__image}
-                     alt={recipe.recipes__name}
-                     className="w-full h-32 object-cover"
-                   />
-                   <div className="p-4">
-                     <h3 className="text-md font-medium text-gray-800 mb-2">
-                       {recipe.recipes__name}
-                     </h3>
-                     <p className="text-sm text-gray-600">
-                       ⏱ {recipe.recipes__total_time}
-                     </p>
-                   </div>
-                 </Link>
-               </div>
-             ))}
-           </div>
-         </div>
-       ))}
-     </div>
-   );
- }
+  // Group by category for main page
+  const categories = ["Breakfast", "Lunch", "Dinner", "Snack", "Salad"];
+  const recipesByCategory = categories.reduce((acc, category) => {
+    acc[category] = recipes.filter((r) => r.recipes__category === category);
+    return acc;
+  }, {});
 
+  return (
+    <div className="max-w-[1280px] mx-auto p-5">
+      {categories.map((category) => (
+        <div key={category} className="mb-8">
+          <h2 className="text-xl text-gray-800 mb-4">{category}</h2>
+          <div className="flex gap-4 overflow-x-auto">
+            {recipesByCategory[category].map((recipe) => (
+              <div
+                key={recipe.recipes__id}
+                className="min-w-[200px] max-w-[200px] bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <Link to={`/recipe/${recipe.recipes__id}`}>
+                  <img
+                    src={recipe.recipes__image}
+                    alt={recipe.recipes__name}
+                    className="w-full h-32 object-cover"
+                  />
+                  <div className="p-4">
+                    <h3 className="text-md font-medium text-gray-800 mb-2">
+                      {recipe.recipes__name}
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      ⏱ {recipe.recipes__total_time}
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
