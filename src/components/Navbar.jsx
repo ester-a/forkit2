@@ -5,9 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 import { UserStatus } from "./UserStatus";
 
 export function Navbar() {
-  const location = useLocation(); // useLocation is used to get the current path.
-  //For each Link, we check if location.pathname matches the link’s path.
-  // If it matches, we apply text-gray-400 to simulate the "active" style (the same color as hover:text-gray-400).
+  const location = useLocation(); 
 
   return (
     <>

@@ -35,7 +35,7 @@ export function RecipeDetail() {
           .from("recipes")
           .select()
           .eq("recipes__id", recipeId)
-          .single(); // Ensure single recipe is fetched
+          .single(); 
 
         if (error) throw error;
         setRecipe(data);
@@ -106,7 +106,7 @@ export function RecipeDetail() {
           .from("comments")
           .select("id, comment, created_at, user_email")
           .eq("recipe_id", recipeId)
-          .order("created_at", { ascending: false }); // Order by latest first
+          .order("created_at", { ascending: false }); 
 
         if (error) throw error;
         setComments(commentsData);
@@ -120,20 +120,20 @@ export function RecipeDetail() {
 
   // Handle comment submission
   async function handleCommentSubmit() {
-    if (!comment.trim()) return; // Don't submit empty comments
+    if (!comment.trim()) return; 
 
     try {
       const { error } = await supabase.from("comments").insert([
         {
           recipe_id: recipeId,
-          user_email: userEmail || null, // Store email of user (if available)
+          user_email: userEmail || null, // Store email of user 
           comment: comment,
         },
       ]);
 
       if (error) throw error;
 
-      // Add the new comment to the state (optimistic update)
+      // Add the new comment to the state
       setComments([
         {
           comment,
@@ -142,7 +142,7 @@ export function RecipeDetail() {
         },
         ...comments,
       ]);
-      setComment(""); // Clear input after submission
+      setComment("");
     } catch (error) {
       console.error("Error posting comment:", error);
     }

@@ -9,7 +9,6 @@ export function UserStatus() {
     <div>
       {isAuth ? (
         <>
-          {/* zde by bylo lepsi pouzit useNavigation */}
           <p className="text-gray-700 inline-block mr-1">
             {user.user_metadata.firstName}
           </p>

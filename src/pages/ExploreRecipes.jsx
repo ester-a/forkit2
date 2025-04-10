@@ -10,10 +10,9 @@ export function ExploreRecipes() {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [query, setQuery] = useState("");
   const [dietFilter, setDietFilter] = useState("");
-  const [courseFilter, setCourseFilter] = useState(""); //update
-  const [proteinFilter, setProteinFilter] = useState(""); //update
-  const [methodFilter, setMethodFilter] = useState(""); //update
-
+  const [courseFilter, setCourseFilter] = useState("");
+  const [proteinFilter, setProteinFilter] = useState("");
+  const [methodFilter, setMethodFilter] = useState("");
 
   const handleChange = (event) => {
     setQuery(event.target.value);
@@ -26,11 +25,6 @@ export function ExploreRecipes() {
   const toggleFilters = () => {
     setFiltersOpen(!filtersOpen);
   };
-
-  // const handleDietFilterChange = (diet) => {
-  //   console.log("Diet filter selected:", diet); 
-  //   setDietFilter(diet);
-  // };
 
   return (
     <>
@@ -89,7 +83,6 @@ export function ExploreRecipes() {
               ]}
               isOpen={openDropdown === "recipeType"}
               onClick={() => toggleDropdown("recipeType")}
-              // onOptionSelect={(diet) => handleDietFilterChange(diet)}
               onOptionSelect={(diet) => setDietFilter(diet)}
             />
             <DropDownButton
@@ -97,7 +90,7 @@ export function ExploreRecipes() {
               options={["Breakfast", "Lunch", "Dinner", "Snack", "Salad"]}
               isOpen={openDropdown === "simpleEasy"}
               onClick={() => toggleDropdown("simpleEasy")}
-              onOptionSelect={(course) => setCourseFilter(course)} //update
+              onOptionSelect={(course) => setCourseFilter(course)}
             />
             <DropDownButton
               label="By Protein"
@@ -120,7 +113,14 @@ export function ExploreRecipes() {
           </div>
         </div>
       </div>
-      <Recipes showAll={true} query={query} dietFilter={dietFilter} courseFilter={courseFilter} proteinFilter={proteinFilter} methodFilter={methodFilter}/>
+      <Recipes
+        showAll={true}
+        query={query}
+        dietFilter={dietFilter}
+        courseFilter={courseFilter}
+        proteinFilter={proteinFilter}
+        methodFilter={methodFilter}
+      />
     </>
   );
 }

@@ -58,10 +58,9 @@ export function Recipes({
   }, [userId]);
 
   useEffect(() => {
-    // Filter recipes by name or ingredients based on searchQuery
-
     let filtered = [...recipes];
 
+    // Filter recipes by name or ingredients based on searchQuery
     if (query) {
       filtered = filtered.filter(
         (recipe) =>
@@ -73,7 +72,7 @@ export function Recipes({
       );
     }
 
-    // D I E T  (booleans)
+    // filter by DIET  
     if (dietFilter) {
       const dietMap = {
         Vegan: "recipes__vegan",
@@ -89,14 +88,14 @@ export function Recipes({
       filtered = filtered.filter((recipe) => recipe[dietColumn] === true);
     }
 
-    // C O U R S E
+    // filter by COURSE
     if (courseFilter) {
       filtered = filtered.filter(
         (recipe) => recipe.recipes__category === courseFilter
       );
     }
 
-    // P R O T E I N
+    // filter by PROTEIN
     if (proteinFilter) {
       const proteinMap = {
         "High Protein": "recipes__high_protein",
@@ -106,7 +105,7 @@ export function Recipes({
       filtered = filtered.filter((recipe) => recipe[proteinColumn] === true);
     }
 
-    // M E T H O D  
+    // filter by METHOD  
     if (methodFilter) {
       if (methodFilter === "Under 30 min") {
         filtered = filtered.filter((recipe) => {
